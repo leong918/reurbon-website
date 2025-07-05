@@ -17,9 +17,8 @@ export function transitOut() {
         y: -20,
         autoAlpha: 0,
         ease: Expo.easeInOut,
-        clearProps: "all",
-    })
-    
+    });
+
     tl.to(
         "#tt-footer",
         {
@@ -27,20 +26,16 @@ export function transitOut() {
             y: -20,
             autoAlpha: 0,
             ease: Expo.easeInOut,
-            clearProps: "all",
         },
         "<0.2"
-    )
-    
-    tl.to(
-        '#content-wrap',
-        {
-            y: 80,
-            autoAlpha: 0,
-            duration: 1.2,
-            ease: Expo.easeInOut,
-        },
-    )
+    );
+
+    tl.to("#content-wrap", {
+        y: 80,
+        autoAlpha: 0,
+        duration: 1.2,
+        ease: Expo.easeInOut,
+    });
 
     // 0. 确保整个 loader 可见
     tl.set("#loader", { autoAlpha: 1 }, 0);
@@ -84,38 +79,28 @@ export function transitIn() {
     });
 
     // Hide preloader and overlay
-    tl.to(".ptr-preloader", { autoAlpha: 0 }, 0)
-        .to(
-            ".ptr-overlay",
-            { scaleY: 0, transformOrigin: "top center" },
-            ">0.3"
-        )
-        .from("#content-wrap", { y: -80, autoAlpha: 0 }, "<0.1");
+    // tl.to(".ptr-preloader", { autoAlpha: 0 }, 0);
+
+    tl.to(".ptr-overlay", { scaleY: 0, transformOrigin: "top center" }, ">2");
+
+    tl.from("#content-wrap", { y: -80, autoAlpha: 0 });
 
     // Animate header and footer in
-    tl.from(
-        "#tt-header",
-        {
-            duration: 1.5,
-            y: 20,
-            autoAlpha: 0,
-            ease: Expo.easeInOut,
-            clearProps: "all",
-        },
-        '>0.2'
-    );
+    tl.from("#tt-header", {
+        duration: 1.5,
+        y: 20,
+        autoAlpha: 0,
+        ease: Expo.easeInOut,
+        clearProps: "all",
+    });
 
-    tl.from(
-        "#tt-footer",
-        {
-            duration: 1.5,
-            y: 20,
-            autoAlpha: 0,
-            ease: Expo.easeInOut,
-            clearProps: "all",
-        },
-        ">0.2"
-    );
+    tl.from("#tt-footer", {
+        duration: 1.5,
+        y: 20,
+        autoAlpha: 0,
+        ease: Expo.easeInOut,
+        clearProps: "all",
+    });
 }
 
 export function startLoader() {
@@ -142,14 +127,15 @@ export function hideLoader() {
         y: "100%",
         delay: 1.8,
     })
-        .to(
-            ".loader__wrapper",
-            { duration: 0.8, ease: "power4.in", y: "-100%" },
-            "<0.4"
-        )
+        .to(".loader__wrapper", {
+            duration: 0.8,
+            ease: "power4.in",
+            y: "-100%",
+        })
         .add(() => {
             document.getElementById("loader").classList.add("loaded");
-            StartBaseTransition();
-            initTemplate();
-        })
+        });
+
+    StartBaseTransition();
+    initTemplate();
 }

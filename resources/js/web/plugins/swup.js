@@ -20,11 +20,11 @@ swup.hooks.on("visit:start", () => {
 swup.hooks.on("content:replace", () => {
   // 播放入场动画
   startLoader();
+  transitIn();
 });
 
 // 3. 切换完成（浏览器历史、滚动位置都已就绪）
 swup.hooks.on("visit:end", () => {
   // 隐藏加载器并收尾
-  transitIn();
   hideLoader();
 });

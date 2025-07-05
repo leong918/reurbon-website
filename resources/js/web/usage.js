@@ -6,8 +6,8 @@ const content = document.querySelector("body");
 const imgLoad = imagesLoaded(content);
 
 $(function () {
-    transitIn();
     startLoader();
+    transitIn();
 
     imgLoad.on("done", (instance) => {
         hideLoader();
