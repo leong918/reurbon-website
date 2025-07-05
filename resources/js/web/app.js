@@ -1,8 +1,7 @@
 import './bootstrap';
 
-// source code from blayden template
-import './template/loader';
+// plugins
+import './plugins/swup';
 
-// source code from nui template
-import './template/theme';
+import './usage';
 

@@ -1,42 +1,155 @@
-import imagesLoaded from "imagesloaded";
-import { gsap } from "gsap";
+// transitions.js
+import { gsap, Expo } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { StartBaseTransition } from "./transition";
+import initTemplate from "./theme";
 
 gsap.registerPlugin(ScrollTrigger);
 
-// --------------------------------------------- //
-// Loader & Loading Animation Start
-// --------------------------------------------- //
-const content = document.querySelector("body");
-const imgLoad = imagesLoaded(content);
-// const loadingWrap = document.querySelector(".loading-wrap");
-// const loadingItems = loadingWrap.querySelectorAll(".loading__item");
-// const fadeInItems = document.querySelectorAll(".loading__fade");
+export function transitOut() {
+    const tl = gsap.timeline({
+        defaults: { duration: 1.2, ease: Expo.easeInOut },
+    });
 
-function startLoader() {
-    let counterElement = document.querySelector(".loader__count .count__text");
+    // header and footer 隐藏
+    tl.to("#tt-header", {
+        duration: 1.5,
+        y: -20,
+        autoAlpha: 0,
+        ease: Expo.easeInOut,
+        clearProps: "all",
+    })
+    
+    tl.to(
+        "#tt-footer",
+        {
+            duration: 1.5,
+            y: -20,
+            autoAlpha: 0,
+            ease: Expo.easeInOut,
+            clearProps: "all",
+        },
+        "<0.2"
+    )
+    
+    tl.to(
+        '#content-wrap',
+        {
+            y: 80,
+            autoAlpha: 0,
+            duration: 1.2,
+            ease: Expo.easeInOut,
+        },
+    )
+
+    // 0. 确保整个 loader 可见
+    tl.set("#loader", { autoAlpha: 1 }, 0);
+
+    // 1. loader wrapper 从上方滑入
+    tl.fromTo(
+        ".loader__wrapper",
+        { y: "-100%", autoAlpha: 0 },
+        { y: "0%", autoAlpha: 1, duration: 0.6, ease: Expo.easeOut },
+        0
+    );
+
+    // 2. 数字容器弹入
+    tl.fromTo(
+        ".loader__count",
+        { scale: 0.8, autoAlpha: 0 },
+        { scale: 1, autoAlpha: 1, duration: 0.6, ease: "back.out(1.7)" },
+        0.3
+    );
+
+    // 3. 蒙层展开
+    tl.fromTo(
+        ".ptr-overlay",
+        { scaleY: 0, transformOrigin: "top center" },
+        { scaleY: 1 },
+        0
+    );
+
+    // 4. 预加载器主体显示
+    tl.fromTo(
+        ".ptr-preloader",
+        { autoAlpha: 0, scale: 0.8 },
+        { autoAlpha: 1, scale: 1 },
+        0.2
+    );
+}
+
+export function transitIn() {
+    const tl = gsap.timeline({
+        defaults: { duration: 1.2, ease: Expo.easeInOut },
+    });
+
+    // Hide preloader and overlay
+    tl.to(".ptr-preloader", { autoAlpha: 0 }, 0)
+        .to(
+            ".ptr-overlay",
+            { scaleY: 0, transformOrigin: "top center" },
+            ">0.3"
+        )
+        .from("#content-wrap", { y: -80, autoAlpha: 0 }, "<0.1");
+
+    // Animate header and footer in
+    tl.from(
+        "#tt-header",
+        {
+            duration: 1.5,
+            y: 20,
+            autoAlpha: 0,
+            ease: Expo.easeInOut,
+            clearProps: "all",
+        },
+        '>0.2'
+    );
+
+    tl.from(
+        "#tt-footer",
+        {
+            duration: 1.5,
+            y: 20,
+            autoAlpha: 0,
+            ease: Expo.easeInOut,
+            clearProps: "all",
+        },
+        ">0.2"
+    );
+}
+
+export function startLoader() {
+    const counterElement = document.querySelector(
+        ".loader__count .count__text"
+    );
     let currentValue = 0;
-    function updateCounter() {
+    function update() {
         if (currentValue < 100) {
-            let increment = Math.floor(Math.random() * 10) + 1;
-            currentValue = Math.min(currentValue + increment, 100);
+            const inc = Math.floor(Math.random() * 10) + 1;
+            currentValue = Math.min(currentValue + inc, 100);
             counterElement.textContent = currentValue;
-            let delay = Math.floor(Math.random() * 120) + 25;
-            setTimeout(updateCounter, delay);
+            setTimeout(update, Math.floor(Math.random() * 120) + 25);
         }
     }
-    updateCounter();
+    update();
 }
-startLoader();
 
-imgLoad.on("done", (instance) => {
-    hideLoader();
-});
-
-function hideLoader() {
-  gsap.to(".loader__count", { duration: 0.8, ease: 'power2.in', y: "100%", delay: 1.8 });
-  gsap.to(".loader__wrapper", { duration: 0.8, ease: 'power4.in', y: "-100%", delay: 2.2 });
-  setTimeout(() => {
-    document.getElementById("loader").classList.add("loaded");
-  }, 1000);
+export function hideLoader() {
+    const tl = gsap.timeline();
+    tl.to(".loader__count", {
+        duration: 0.8,
+        ease: "power2.in",
+        y: "100%",
+        delay: 1.8,
+    })
+        .to(
+            ".loader__wrapper",
+            { duration: 0.8, ease: "power4.in", y: "-100%" },
+            "<0.4"
+        )
+        .add(() => {
+            document.getElementById("loader").classList.add("loaded");
+            StartBaseTransition();
+            initTemplate();
+        })
 }

@@ -713,39 +713,6 @@ p.text-xxxlg {
 	transform: translateX(-50%) !important;
 }
 
-
-/* ------------------------------------------------------------- *
- * Text color classes
-/* ------------------------------------------------------------- */
-
-.text-main, 
-.text-primary { 
-	color: var(--tt-main-color) !important;  /* Template main color */
-}
-a.text-primary:focus, 
-a.text-primary:hover { 
-	color: var(--tt-main-color)!important; opacity: .8 !important; 
-}
-
-.text-secondary { color: #6c757d !important; }
-.text-white { color: #FFF !important; }
-.text-gray { color: #b9b9b9 !important; }
-.text-gray-2 { color: #CCC !important; }
-.text-gray-3 { color: #DDD !important; }
-.text-dark { color: #272727 !important; }
-.text-dark-2 { color: #444 !important; }
-.text-dark-3 { color: #666 !important; }
-.text-green { color: #0BC35B !important; }
-.text-blue { color: #3042B3 !important; }
-.text-yellow { color: #FFE800 !important; }
-.text-red { color: #FD2B2B !important; }
-.text-brown { color: #a56e00 !important; }
-.text-purple { color: #ac0af3 !important; }
-.text-pink { color: #F12765 !important; }
-
-.text-muted { color: #888 !important; }
-
-
 /* ------------------------------------------------------------- *
  * Link style classes
 /* ------------------------------------------------------------- */

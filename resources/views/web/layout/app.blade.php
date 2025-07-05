@@ -22,7 +22,9 @@
                 <div id="content-wrap">
 
                     <div id="page-content">
-                        @yield('content')
+                        <div id="swup">
+                            @yield('content')
+                        </div>
                     </div>
 
                     @include('web.layout.footer')
