@@ -73,7 +73,7 @@
         const textsSubContainer = new PIXI.Container();
 
         // displacement variables used for slides transition 
-        const dispSprite = new PIXI.Sprite.from(options.backgroundDisplacementSprite );
+        const dispSprite = PIXI.Sprite.from(options.backgroundDisplacementSprite );
         const dispFilter = new PIXI.filters.DisplacementFilter(dispSprite);
 
         // displacement variables used for cursor moving effect
