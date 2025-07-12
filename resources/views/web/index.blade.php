@@ -7,51 +7,85 @@
         </div>
     </section>
 
-    <div id="page-header" class="ph-full ph-cap-lg ph-ghost-scroll ph-image-cropped ph-content-parallax">
+    <div id="page-header" class="ph-full ph-cap-lg ph-ghost-scroll ph-image-cropped ph-content-parallax bg-[#ebebeb]">
         <div class="page-header-inner tt-wrap">
-
-            <!-- Begin page header image
-                            ============================= -->
-            <!-- <div class="ph-image">
-                                <div class="ph-image-inner">
-                                    <img src="assets/img/page-header/ph-1.jpg" alt="Image">
-                                </div>
-                            </div> -->
-            <!-- End page header image -->
-
-            <!-- Begin page header caption
-                            ===============================
-                            Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
-                            -->
             <div class="ph-caption">
-                <!-- <div class="ph-caption-subtitle">
-                                    <div class="ph-appear">Subtitle</div>
-                                </div> -->
                 <h1 class="ph-caption-title">
-                    <div class="ph-appear">Creative branding,<br> design <span class="hide-from-sm">→</span> <em
-                            class="text-stroke-light">focused</em><br> digital solutions</div>
-                    <!-- You can use <br> to break a text line if needed -->
+                    <p class="text-[46px] mb-0 font-[500] text-theme">
+                        One stop service of creative brand-tech agency with branding design, IT software development and
+                        marketing services. We drive B2B and SMEs to a new generation of creative and strategic.
+                    </p>
                 </h1>
                 <div class="ph-caption-title-ghost">
-                    <div class="ph-appear">Creative</div>
+                    <div
+                        class="ph-appear text-[300px] text-theme font-[500] font-(family-name:--font-anybody-ultracondensed)">
+                        WE ARE REURBON
+                    </div>
                 </div>
             </div>
-            <!-- End page header caption -->
-
-        </div> <!-- /.page-header-inner -->
-
-        <!-- Begin scroll down (you can change "data-offset" to set scroll top offset)
-                        ======================= -->
-        <div class="tt-scroll-down">
-            <a href="#page-content" class="tt-sd-inner ph-appear" data-offset="0">
-                <div class="tt-sd-arrow">
-                    <div class="tt-sd-arrow-inner"></div>
-                </div>
-                <div class="tt-sd-text">Scroll</div>
-            </a>
         </div>
-        <!-- End scroll down -->
     </div>
+
+    <section class="tt-section bg-gradient-to-br from-[#ec1c24] to-white">
+        <div class="tt-section-inner tt-wrap">
+            <div class="text-white md:px-20">
+                <div class="max-w-5xl mx-auto space-y-10">
+                    <!-- Header Section -->
+                    <div>
+                        <p class="text-sm uppercase tracking-wide font-(family:--font-anybody-ultracondensed) text-white/80">
+                            Look Over! Why your business challenge today
+                        </p>
+                        <h2 class="text-3xl md:text-4xl font-semibold leading-tight mt-2">
+                            Most creative & marketing <br />
+                            <span class="italic font-light">agency are failing you behind.</span>
+                        </h2>
+                    </div>
+        
+                    <!-- Problem Grid -->
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-10">
+                        <!-- Item 1 -->
+                        <div>
+                            <div class="text-4xl mb-4">
+                                <!-- Placeholder icon -->
+                                <div class="w-8 h-8 bg-white/50 rounded-sm"></div>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2">Lack of a Marketing Strategy</h3>
+                            <p class="text-sm text-white/90">
+                                Designers make good-looking designs but without purpose, it amplify the current poor messaging to
+                                build your brands.
+                            </p>
+                        </div>
+        
+                        <!-- Item 2 -->
+                        <div>
+                            <div class="text-4xl mb-4">
+                                <!-- Placeholder icon -->
+                                <div class="w-8 h-8 bg-white/50 rounded-full"></div>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2">Poorly brand identity</h3>
+                            <p class="text-sm text-white/90">
+                                Straightforward start and overlook brand identity development, make it difficult to attract the
+                                right target audiences.
+                            </p>
+                        </div>
+        
+                        <!-- Item 3 -->
+                        <div>
+                            <div class="text-4xl mb-4">
+                                <!-- Placeholder icon -->
+                                <div class="w-8 h-8 bg-white/50 rounded"></div>
+                            </div>
+                            <h3 class="text-lg font-semibold mb-2">Disconnected Digital Systems</h3>
+                            <p class="text-sm text-white/90">
+                                Most providers lack an integrated digital systems approach, creating data silos, inconsistent user
+                                experiences.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <div class="tt-section">
         <div class="tt-section-inner">
