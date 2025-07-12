@@ -1,26 +1,32 @@
 @extends('web.layout.app')
 
 @section('content')
+    <section class="section-banner">
+        <div class="aspect-[21/10] overflow-hidden">
+            <div id="rgbKineticSlider" class="rgb-kinetic-slider"></div>
+        </div>
+    </section>
+
     <div id="page-header" class="ph-full ph-cap-lg ph-ghost-scroll ph-image-cropped ph-content-parallax">
         <div class="page-header-inner tt-wrap">
 
             <!-- Begin page header image
-            ============================= -->
+                            ============================= -->
             <!-- <div class="ph-image">
-                <div class="ph-image-inner">
-                    <img src="assets/img/page-header/ph-1.jpg" alt="Image">
-                </div>
-            </div> -->
+                                <div class="ph-image-inner">
+                                    <img src="assets/img/page-header/ph-1.jpg" alt="Image">
+                                </div>
+                            </div> -->
             <!-- End page header image -->
 
             <!-- Begin page header caption
-            ===============================
-            Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
-            -->
+                            ===============================
+                            Use class "max-width-*" to set caption max width if needed. For example "max-width-1000". More info about helper classes can be found in the file "helper.css".
+                            -->
             <div class="ph-caption">
                 <!-- <div class="ph-caption-subtitle">
-                    <div class="ph-appear">Subtitle</div>
-                </div> -->
+                                    <div class="ph-appear">Subtitle</div>
+                                </div> -->
                 <h1 class="ph-caption-title">
                     <div class="ph-appear">Creative branding,<br> design <span class="hide-from-sm">→</span> <em
                             class="text-stroke-light">focused</em><br> digital solutions</div>
@@ -35,7 +41,7 @@
         </div> <!-- /.page-header-inner -->
 
         <!-- Begin scroll down (you can change "data-offset" to set scroll top offset)
-        ======================= -->
+                        ======================= -->
         <div class="tt-scroll-down">
             <a href="#page-content" class="tt-sd-inner ph-appear" data-offset="0">
                 <div class="tt-sd-arrow">
@@ -404,3 +410,53 @@
     </div>
     <!-- ... -->
 @endsection
+
+@push('scripts')
+    <script src="{{ asset('js/lib/pixi.min.js') }}"></script>
+    <script src="{{ asset('js/lib/pixi-filters.min.js') }}"></script>
+    <script src="{{ asset('js/lib/rgbKineticSlider.js') }}"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (typeof rgbKineticSlider !== 'undefined') {
+                new rgbKineticSlider({
+                    slideImages: [
+                        "{{ asset('images/home/banner.jpg') }}",
+                    ],
+                    itemsTitles: [
+                        ['Creative', 'Branding'],
+                    ],
+                    cursorImgEffect: true,
+                    cursorTextEffect: false,
+                    swipe: true,
+                    swipeDistance: window.innerWidth * 0.4,
+                    swipeScale: 2,
+                    slideTransitionDuration: 1.2,
+                    transitionScaleIntensity: 40,
+                    transitionScaleAmplitude: 160,
+                    nav: true,
+                    navElement: '.tt-scroll-down',
+                    imagesRgbEffect: true,
+                    imagesRgbIntensity: 0.9,
+                    navImagesRgbIntensity: 80,
+                    textsDisplay: true,
+                    textsSubTitleDisplay: false,
+                    textsTiltEffect: true,
+                    googleFonts: ['Montserrat:700', 'Roboto:400'],
+                    buttonMode: false,
+                    textsRgbEffect: true,
+                    textsRgbIntensity: 0.03,
+                    navTextsRgbIntensity: 15,
+                    textsDuration: 1,
+                    textsAnimationIntensity: 4,
+                    textsAnimationDelay: 0.1,
+                    imagesAnimationDuration: 1.1,
+                    imagesAnimationIntensity: 23,
+                    navImagesAnimationIntensity: 80,
+                    navTextsAnimationIntensity: 15,
+                    navTextsAnimationDuration: 1
+                });
+            }
+        });
+    </script>
+@endpush
