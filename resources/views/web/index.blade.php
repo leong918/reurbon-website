@@ -7,9 +7,9 @@
                 <div id="rgbKineticSlider" class="rgb-kinetic-slider"></div>
             </div>
         </section>
-    
-        <div id="page-header" class="ph-full ph-cap-lg ph-ghost-scroll ph-image-cropped ph-content-parallax bg-[#ebebeb]">
-            <div class="page-header-inner tt-wrap">
+
+        <section id="page-header" class="ph-ghost-scroll ph-image-cropped ph-content-parallax bg-light-grey py-[180px]">
+            <div class="@container container px-4 mx-auto">
                 <div class="ph-caption">
                     <h1 class="ph-caption-title">
                         <p class="text-[46px] mb-0 font-[500] text-theme">
@@ -25,60 +25,67 @@
                     </div>
                 </div>
             </div>
-        </div>
-    
-        <section class="tt-section bg-red-mesh">
-            <div class="@container container mx-auto px-4">
+        </section>
+
+        <section class="py-[150px] bg-red-mesh">
+            <div class="@container container px-4 mx-auto">
                 <div class="text-white">
                     <div class="mx-auto space-y-10">
                         <!-- Header Section -->
                         <div>
-                            <p class="text-sm uppercase tracking-wide font-(family:--font-anybody-ultracondensed) text-white/80">
+                            <p
+                                class="text-[21px] leading-[27px] uppercase tracking-wide font-(family:--font-anybody-ultracondensed) text-light-white">
                                 Look Over! Why your business challenge today
                             </p>
-                            <h2 class="text-3xl md:text-4xl font-semibold leading-tight mt-2">
-                                Most creative & marketing <br />
-                                <span class="italic font-light">agency are failing you behind.</span>
+                            <h2 class="text-[46px] font-[500] leading-[1.4]">
+                                Most creative & marketing <br />agency are
+                                <span class="italic font-light">failing you behind.</span>
                             </h2>
                         </div>
-            
+
                         <!-- Problem Grid -->
                         <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-10">
                             <!-- Item 1 -->
                             <div>
-                                <div class="text-4xl mb-4">
+                                <div class="mb-[36px]">
                                     <!-- Placeholder icon -->
-                                    <div class="w-8 h-8 bg-white/50 rounded-sm"></div>
+                                    <img src="{{ asset('/images/home/lack-marketing-strategy.svg') }}"
+                                        alt="Lack of Marketing Strategy" class="w-[86px] h-[86px] object-cover" />
                                 </div>
-                                <h3 class="text-lg font-semibold mb-2">Lack of a Marketing Strategy</h3>
-                                <p class="text-sm text-white/90">
-                                    Designers make good-looking designs but without purpose, it amplify the current poor messaging to
+                                <h3 class="text-[30px] leading-[37px] font-[500] mb-[36px]">Lack of a Marketing Strategy</h3>
+                                <p class="text-[22px] leading-[31px] text-light-white">
+                                    Designers make good-looking designs but without purpose, it amplify the current poor
+                                    messaging to
                                     build your brands.
                                 </p>
                             </div>
-            
+
                             <!-- Item 2 -->
                             <div>
-                                <div class="text-4xl mb-4">
+                                <div class="mb-[36px]">
                                     <!-- Placeholder icon -->
-                                    <div class="w-8 h-8 bg-white/50 rounded-full"></div>
+                                    <img src="{{ asset('/images/home/poorly-brand-identity.svg') }}"
+                                        alt="Poorly Brand Identity" class="w-[86px] h-[86px] object-cover" />
                                 </div>
-                                <h3 class="text-lg font-semibold mb-2">Poorly brand identity</h3>
-                                <p class="text-sm text-white/90">
-                                    Straightforward start and overlook brand identity development, make it difficult to attract the
+                                <h3 class="text-[30px] leading-[37px] font-[500] mb-[36px]">Poorly Brand Identity</h3>
+                                <p class="text-[22px] leading-[31px] text-light-white">
+                                    Straightforward start and overlook brand identity development, make it difficult to
+                                    attract the
                                     right target audiences.
                                 </p>
                             </div>
-            
+
                             <!-- Item 3 -->
                             <div>
-                                <div class="text-4xl mb-4">
+                                <div class="mb-[36px]">
                                     <!-- Placeholder icon -->
-                                    <div class="w-8 h-8 bg-white/50 rounded"></div>
+                                    <img src="{{ asset('/images/home/disconnect-digital-systems.svg') }}"
+                                        alt="Disconnected Digital Systems" class="w-[86px] h-[86px] object-cover" />
                                 </div>
-                                <h3 class="text-lg font-semibold mb-2">Disconnected Digital Systems</h3>
-                                <p class="text-sm text-white/90">
-                                    Most providers lack an integrated digital systems approach, creating data silos, inconsistent user
+                                <h3 class="text-[30px] leading-[37px] font-[500] mb-[36px]">Disconnected Digital Systems</h3>
+                                <p class="text-[22px] leading-[31px] text-light-white">
+                                    Most providers lack an integrated digital systems approach, creating data silos,
+                                    inconsistent user
                                     experiences.
                                 </p>
                             </div>
@@ -87,8 +94,161 @@
                 </div>
             </div>
         </section>
-    
-        <div class="tt-section">
+
+        <section class="pt-[175px] pb-[85px] bg-light-grey">
+            <div class="@container container px-4 mx-auto">
+                <div class="flex flex-wrap gap-x-[46px] gap-y-[20px] items-stretch">
+                    <!-- Left image and text -->
+                    <div class="flex-2 flex flex-col h-full">
+                        <div class="relative h-full">
+                            <div class="w-full rounded-[28px] overflow-hidden shadow-[0_4_4px_0_rgba(0,0,0,0.25)] h-full">
+                                <img src="{{ asset('/images/home/city-walk.jpg') }}" alt="City Walk"
+                                    class="object-cover w-full h-full" />
+                            </div>
+                            <div class="absolute inset-0 rounded-[16px] flex items-center justify-center">
+                                <div class="text-white text-center px-4">
+                                    <p class="text-xl font-semibold">At Reurbon,<br />we do it diffrent</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right content list -->
+                    <div class="flex-[1_5_auto] self-stretch">
+                        <div class="flex flex-col gap-y-[20px] h-full">
+                            <!-- Item 1 -->
+                            <div class="flex gap-4 p-6 rounded-[16px] bg-light-gray h-3/1">
+                                <div class="text-5xl font-bold text-red-600">1</div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Strategic Planning in Creativity</h4>
+                                    <p class="text-sm text-gray-700">
+                                        We do beautiful designs and structured IT by elaborate planning to ensure that great
+                                        results
+                                        are inline.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="flex gap-4 p-6 rounded-[16px] bg-light-gray h-3/1">
+                                <div class="text-5xl font-bold text-red-600">2</div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Integrated IT Ecosystems</h4>
+                                    <p class="text-sm text-gray-700">
+                                        We bring together expert marketers and creative designers to bring out marketing
+                                        strategy
+                                        messages and build a strong core brand visual identity.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Item 3 -->
+                            <div class="flex gap-4 p-6 rounded-[16px] bg-light-gray h-3/1">
+                                <div class="text-5xl font-bold text-red-600">3</div>
+                                <div>
+                                    <h4 class="font-semibold text-lg">Budget-Friendly Pricing</h4>
+                                    <p class="text-sm text-gray-700">
+                                        We deliver powerful IT works in affordable prices while maintaining quality.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-[90px] bg-light-grey">
+            <div class="@container container px-4 mx-auto px-4 flex flex-col lg:flex-row items-center gap-10">
+
+                <!-- Image First on Mobile -->
+                <div class="order-1 lg:order-3 w-full lg:w-1/2 rounded-tr-[20px] rounded-br-[20px] overflow-hidden">
+                    <img src="{{ asset('images/home/brand.png') }}" alt="Red Black Abstract" class="w-full object-cover" />
+                </div>
+
+                <!-- Text Content Last on Mobile -->
+                <div class="order-2 lg:order-1 w-full lg:w-1/2 space-y-6 text-center lg:text-left">
+                    <p class="text-sm text-gray-500">What you can expect</p>
+
+                    <h2 class="text-3xl font-light text-black leading-snug">
+                        Crafting <span class="text-red-600 font-normal">Brands</span><br />
+                        with <em>Soul</em>
+                    </h2>
+
+                    <p class="text-gray-600 text-sm leading-relaxed max-w-md mx-auto lg:mx-0">
+                        We make spiritless brands vivid soul. At Reurbon, we blend big ideas and super technologies to
+                        create impactful connections. Our works stand out, evolved your brand with a interesting spirit.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="py-[90px] bg-light-grey">
+            <div class="@container container px-4 mx-auto px-4 flex flex-col lg:flex-row gap-10">
+
+                <!-- Left: Heading + Description -->
+                <div class="order-2 lg:order-1 w-full lg:w-1/2 space-y-4 text-center lg:text-left">
+                    <p class="text-sm text-gray-500">What we provide</p>
+                    <h2 class="text-3xl font-light text-black">
+                        Our <em class="text-red-600 not-italic">Services</em>
+                    </h2>
+                    <p class="text-sm text-gray-600 max-w-sm mx-auto lg:mx-0">
+                        For B2B and SMEs that struggling to drive growth. We passionate about craft branding that stick to
+                        deliver best result with ideal clients.
+                    </p>
+                </div>
+
+                <!-- Right: Service Categories -->
+                <div class="order-1 lg:order-2 w-full lg:w-1/2 space-y-10 text-sm text-gray-700">
+
+                    <!-- IT Software Dev -->
+                    <div class="border-t pt-4 space-y-2">
+                        <h3 class="font-semibold text-base text-black">IT Software Dev</h3>
+                        <ul class="space-y-1">
+                            <li class="flex items-start gap-2"><span class="text-red-500">●</span> Website & Mobile
+                                Development</li>
+                            <li class="flex items-start gap-2"><span class="text-red-500">●</span> E-Commerce System</li>
+                            <li class="flex items-start gap-2"><span class="text-red-500">●</span> Custom Website Design for
+                                Brands</li>
+                            <li class="flex items-start gap-2"><span class="text-red-500">●</span> React, PHP, Node.js,
+                                Laravel</li>
+                        </ul>
+                    </div>
+
+                    <!-- Creative Design -->
+                    <div class="border-t pt-4 space-y-2">
+                        <h3 class="font-semibold text-base text-black">Creative Design</h3>
+                        <ul class="space-y-1">
+                            <li class="flex items-start gap-2"><span class="text-red-500">●</span> Branding & Digital
+                                Identity</li>
+                            <li class="flex items-start gap-2"><span class="text-red-500">●</span> UI/UX Design</li>
+                            <li class="flex items-start gap-2"><span class="text-red-500">●</span> Logo Design</li>
+                            <li class="flex items-start gap-2"><span class="text-red-500">●</span> Design Research</li>
+                        </ul>
+                    </div>
+
+                    <!-- Digital Marketing -->
+                    <div class="border-t pt-4 space-y-2">
+                        <h3 class="font-semibold text-base text-black">Digital Marketing</h3>
+                        <ul class="space-y-1">
+                            <li class="flex items-start gap-2"><span class="text-red-500">●</span> SEO & Content Strategy
+                            </li>
+                            <li class="flex items-start gap-2"><span class="text-red-500">●</span> Lead Generation &
+                                Customer Engagement</li>
+                            <li class="flex items-start gap-2"><span class="text-red-500">●</span> Marketing Collaterals &
+                                Visual Content</li>
+                            <li class="flex items-start gap-2"><span class="text-red-500">●</span> Social Media Ads</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+        <div class="tt-section"> 
             <div class="tt-section-inner">
                 <div id="portfolio-grid" class="pgi-hover">
                     <div class="tt-grid ttgr-layout-creative-2 ttgr-gap-4">
@@ -96,7 +256,8 @@
                             <div class="tt-grid-item isotope-item people">
                                 <div class="ttgr-item-inner">
                                     <div class="portfolio-grid-item">
-                                        <a href="single-project-1.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+                                        <a href="single-project-1.html" class="pgi-image-wrap"
+                                            data-cursor="View<br>Project">
                                             <div class="pgi-image-holder">
                                                 <div class="pgi-image-inner anim-zoomin">
                                                     <figure class="pgi-image ttgr-height">
@@ -122,7 +283,8 @@
                             <div class="tt-grid-item isotope-item creative">
                                 <div class="ttgr-item-inner">
                                     <div class="portfolio-grid-item">
-                                        <a href="single-project-2.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+                                        <a href="single-project-2.html" class="pgi-image-wrap"
+                                            data-cursor="View<br>Project">
                                             <div class="pgi-image-holder">
                                                 <div class="pgi-image-inner anim-zoomin">
                                                     <figure class="pgi-image ttgr-height">
@@ -148,7 +310,8 @@
                             <div class="tt-grid-item isotope-item people">
                                 <div class="ttgr-item-inner">
                                     <div class="portfolio-grid-item">
-                                        <a href="single-project-3.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+                                        <a href="single-project-3.html" class="pgi-image-wrap"
+                                            data-cursor="View<br>Project">
                                             <div class="pgi-image-holder">
                                                 <div class="pgi-image-inner anim-zoomin">
                                                     <figure class="pgi-video-wrap ttgr-height">
@@ -179,7 +342,8 @@
                             <div class="tt-grid-item isotope-item nature">
                                 <div class="ttgr-item-inner">
                                     <div class="portfolio-grid-item">
-                                        <a href="single-project-4.html" class="pgi-image-wrap" data-cursor="View<br>Project">
+                                        <a href="single-project-4.html" class="pgi-image-wrap"
+                                            data-cursor="View<br>Project">
                                             <div class="pgi-image-holder">
                                                 <div class="pgi-image-inner anim-zoomin">
                                                     <figure class="pgi-image ttgr-height">
@@ -206,7 +370,8 @@
                     </div>
                 </div>
                 <div class="text-center anim-fadeinup">
-                    <a href="portfolio-grid-creative.html" class="tt-scrolling-btn all-works-btn" data-cursor="All<br>Works">
+                    <a href="portfolio-grid-creative.html" class="tt-scrolling-btn all-works-btn"
+                        data-cursor="All<br>Works">
                         <div class="scr-btn-inner ph-appear">
                             <div class="scr-btn-icon"><i class="fas fa-arrow-right"></i></div>
                             <div class="scr-btn-spinner">
@@ -423,7 +588,8 @@
                                 <div class="tt-bci-categories">
                                     <a href="blog-archive.html">Tutorials</a>
                                 </div>
-                                <h2 class="tt-bci-title"><a href="blog-post.html">Secrets to Getting Your Project to Complete
+                                <h2 class="tt-bci-title"><a href="blog-post.html">Secrets to Getting Your Project to
+                                        Complete
                                         Quickly</a></h2>
                                 <div class="tt-bci-meta">
                                     <span class="published">May 19, 2022</span>
