@@ -11,9 +11,14 @@
 
 
 // // variables folder
-// @import 'variables/root';
-// @import 'variables/fonts';
-// @import 'variables/typography';
+@import 'variables/root';
+@import 'variables/colors';
+@import 'variables/fonts';
+@import 'variables/typography';
 
 // // plugins folder
 // @import 'plugins/bootstrap';
+
+body {
+  font-family: 'Cabinet Grotesk', sans-serif;
+}
