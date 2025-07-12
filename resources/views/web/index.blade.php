@@ -4,7 +4,7 @@
     <div id="home">
         <section class="section-banner">
             <div class="aspect-[21/10] overflow-hidden">
-                <div id="rgbKineticSlider" class="rgb-kinetic-slider"></div>
+                <canvas id="kinetic-slider" class="kinetic-slider"></canvas>
             </div>
         </section>
 
@@ -52,7 +52,8 @@
                                     <img src="{{ asset('/images/home/lack-marketing-strategy.svg') }}"
                                         alt="Lack of Marketing Strategy" class="w-[86px] h-[86px] object-cover" />
                                 </div>
-                                <h3 class="text-[30px] leading-[37px] font-[500] mb-[36px]">Lack of a Marketing Strategy</h3>
+                                <h3 class="text-[30px] leading-[37px] font-[500] mb-[36px]">Lack of a Marketing Strategy
+                                </h3>
                                 <p class="text-[22px] leading-[31px] text-light-white">
                                     Designers make good-looking designs but without purpose, it amplify the current poor
                                     messaging to
@@ -82,7 +83,8 @@
                                     <img src="{{ asset('/images/home/disconnect-digital-systems.svg') }}"
                                         alt="Disconnected Digital Systems" class="w-[86px] h-[86px] object-cover" />
                                 </div>
-                                <h3 class="text-[30px] leading-[37px] font-[500] mb-[36px]">Disconnected Digital Systems</h3>
+                                <h3 class="text-[30px] leading-[37px] font-[500] mb-[36px]">Disconnected Digital Systems
+                                </h3>
                                 <p class="text-[22px] leading-[31px] text-light-white">
                                     Most providers lack an integrated digital systems approach, creating data silos,
                                     inconsistent user
@@ -105,8 +107,10 @@
                                 <img src="{{ asset('/images/home/city-walk.jpg') }}" alt="City Walk"
                                     class="object-cover w-full h-full" />
                             </div>
-                            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-transparent 
-                                rounded-[28px]"></div>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-transparent 
+                                rounded-[28px]">
+                            </div>
                             <div class="absolute inset-0 top-[40px] left-[44px]">
                                 <p class="text-[46px] font-[500] leading-[60px] text-white">
                                     At Reurbon,<br />we do it diffrent
@@ -119,19 +123,23 @@
                     <div class="lg:flex-[0_0_60%] self-stretch">
                         <div class="flex flex-col gap-y-[20px] h-full">
                             <!-- Item 1 -->
-                            <div class="flex gap-[40px] py-[30px] px-[20px] lg:py-[49px] lg:px-[69px] rounded-[28px] bg-light-gray lg:h-3/1 flex-col lg:flex-row">
+                            <div
+                                class="flex gap-[40px] py-[30px] px-[20px] lg:py-[49px] lg:px-[69px] rounded-[28px] bg-light-gray lg:h-3/1 flex-col lg:flex-row">
                                 <div class="lg:w-1/7">
-                                    <div class="text-[150px] lg:text-[200px] font-[400] text-secondary leading-[150px] px-[20px] lg:px-0">
+                                    <div
+                                        class="text-[150px] lg:text-[200px] font-[400] text-secondary leading-[150px] px-[20px] lg:px-0">
                                         1
                                     </div>
                                 </div>
                                 <div class="lg:w-3/7">
-                                    <h4 class="font-[500] text-[24px] lg:text-[30px] leading-[24px] lg:leading-[37px] text-theme">
+                                    <h4
+                                        class="font-[500] text-[24px] lg:text-[30px] leading-[24px] lg:leading-[37px] text-theme">
                                         Strategic Planning in Creativity
                                     </h4>
                                 </div>
                                 <div class="lg:w-3/7">
-                                    <p class="text-[16px] lg:text-[22px] leading-[24px] lg:leading-[31px] font-[400] text-dark-theme">
+                                    <p
+                                        class="text-[16px] lg:text-[22px] leading-[24px] lg:leading-[31px] font-[400] text-dark-theme">
                                         We do beautiful designs and structured IT by elaborate planning to ensure that great
                                         results
                                         are inline.
@@ -140,14 +148,17 @@
                             </div>
 
                             <!-- Item 2 -->
-                            <div class="flex gap-[40px] py-[30px] px-[20px] lg:py-[49px] lg:px-[69px] rounded-[28px] bg-light-gray lg:h-3/1 flex-col lg:flex-row">
+                            <div
+                                class="flex gap-[40px] py-[30px] px-[20px] lg:py-[49px] lg:px-[69px] rounded-[28px] bg-light-gray lg:h-3/1 flex-col lg:flex-row">
                                 <div class="lg:w-1/7">
-                                    <div class="text-[150px] lg:text-[200px] font-[400] text-secondary leading-[150px] px-[20px] lg:px-0">
+                                    <div
+                                        class="text-[150px] lg:text-[200px] font-[400] text-secondary leading-[150px] px-[20px] lg:px-0">
                                         2
                                     </div>
                                 </div>
                                 <div class="lg:w-3/7">
-                                    <h4 class="font-[500] text-[24px] lg:text-[30px] leading-[24px] lg:leading-[37px] text-theme">
+                                    <h4
+                                        class="font-[500] text-[24px] lg:text-[30px] leading-[24px] lg:leading-[37px] text-theme">
                                         Integrated IT Ecosystems
                                     </h4>
                                 </div>
@@ -161,14 +172,17 @@
                             </div>
 
                             <!-- Item 3 -->
-                            <div class="flex gap-[40px] py-[30px] px-[20px] lg:py-[49px] lg:px-[69px] rounded-[28px] bg-light-gray lg:h-3/1 flex-col lg:flex-row">
+                            <div
+                                class="flex gap-[40px] py-[30px] px-[20px] lg:py-[49px] lg:px-[69px] rounded-[28px] bg-light-gray lg:h-3/1 flex-col lg:flex-row">
                                 <div class="lg:w-1/7">
-                                    <div class="text-[150px] lg:text-[200px] font-[400] text-secondary leading-[150px] px-[20px] lg:px-0">
+                                    <div
+                                        class="text-[150px] lg:text-[200px] font-[400] text-secondary leading-[150px] px-[20px] lg:px-0">
                                         3
                                     </div>
                                 </div>
                                 <div class="lg:w-3/7">
-                                    <h4 class="font-[500] text-[24px] lg:text-[30px] leading-[24px] lg:leading-[37px] text-theme">
+                                    <h4
+                                        class="font-[500] text-[24px] lg:text-[30px] leading-[24px] lg:leading-[37px] text-theme">
                                         Budget-Friendly Pricing
                                     </h4>
                                 </div>
@@ -185,16 +199,19 @@
         </section>
 
         <section class="py-[90px] bg-light-grey">
-            <div class="@container container px-4 mx-auto px-4 lg:px-[50px] flex flex-col lg:flex-row gap-10 justify-center">
+            <div
+                class="@container container px-4 mx-auto px-4 lg:px-[50px] flex flex-col lg:flex-row gap-10 justify-center">
 
                 <!-- Image First on Mobile -->
                 <div class="order-1 lg:order-2 w-full flex-[0_0_45%]">
-                    <img src="{{ asset('images/home/brand.png') }}" alt="Red Black Abstract" class="object-contain max-w-full lg:absolute lg:right-[0]" />
+                    <img src="{{ asset('images/home/brand.png') }}" alt="Red Black Abstract"
+                        class="object-contain max-w-full lg:absolute lg:right-[0]" />
                 </div>
 
                 <!-- Text Content Last on Mobile -->
                 <div class="order-2 lg:order-1 w-full flex-[0_0_45%] space-y-6 text-center lg:text-start lg:py-[150px]">
-                    <p class="text-[21px] leading-[27px] text-light-theme font-(family:--font-anybody-ultracondensed) text-gray-500">
+                    <p
+                        class="text-[21px] leading-[27px] text-light-theme font-(family:--font-anybody-ultracondensed) text-gray-500">
                         What you can expect
                     </p>
 
@@ -243,7 +260,8 @@
                             <li class="flex items-start gap-2"><span class="text-red-500">●</span> Website & Mobile
                                 Development</li>
                             <li class="flex items-start gap-2"><span class="text-red-500">●</span> E-Commerce System</li>
-                            <li class="flex items-start gap-2"><span class="text-red-500">●</span> Custom Website Design for
+                            <li class="flex items-start gap-2"><span class="text-red-500">●</span> Custom Website Design
+                                for
                                 Brands</li>
                             <li class="flex items-start gap-2"><span class="text-red-500">●</span> React, PHP, Node.js,
                                 Laravel</li>
@@ -286,7 +304,7 @@
 
 
 
-        <section class="bg-light-grey py-[90px]"> 
+        <section class="bg-light-grey py-[90px]">
             <div class="tt-section-inner">
                 <div id="portfolio-grid" class="pgi-hover">
                     <div class="tt-grid ttgr-layout-creative-2 ttgr-gap-4">
@@ -648,56 +666,4 @@
             <div class="tt-blc-pagination hide-cursor"></div>
         </div>
     </div>
-
-    <!-- ... -->
 @endsection
-
-{{-- @push('scripts')
-    <script src="{{ asset('js/lib/pixi.min.js') }}"></script>
-    <script src="{{ asset('js/lib/pixi-filters.min.js') }}"></script>
-    <script src="{{ asset('js/lib/rgbKineticSlider.js') }}"></script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            if (typeof rgbKineticSlider !== 'undefined') {
-                new rgbKineticSlider({
-                    slideImages: [
-                        "{{ asset('images/home/banner.jpg') }}",
-                    ],
-                    itemsTitles: [
-                        ['Creative', 'Branding'],
-                    ],
-                    cursorImgEffect: true,
-                    cursorTextEffect: false,
-                    swipe: true,
-                    swipeDistance: window.innerWidth * 0.4,
-                    swipeScale: 2,
-                    slideTransitionDuration: 1.2,
-                    transitionScaleIntensity: 40,
-                    transitionScaleAmplitude: 160,
-                    nav: true,
-                    navElement: '.tt-scroll-down',
-                    imagesRgbEffect: true,
-                    imagesRgbIntensity: 0.9,
-                    navImagesRgbIntensity: 80,
-                    textsDisplay: true,
-                    textsSubTitleDisplay: false,
-                    textsTiltEffect: true,
-                    googleFonts: ['Montserrat:700', 'Roboto:400'],
-                    buttonMode: false,
-                    textsRgbEffect: true,
-                    textsRgbIntensity: 0.03,
-                    navTextsRgbIntensity: 15,
-                    textsDuration: 1,
-                    textsAnimationIntensity: 4,
-                    textsAnimationDelay: 0.1,
-                    imagesAnimationDuration: 1.1,
-                    imagesAnimationIntensity: 23,
-                    navImagesAnimationIntensity: 80,
-                    navTextsAnimationIntensity: 15,
-                    navTextsAnimationDuration: 1
-                });
-            }
-        });
-    </script>
-@endpush --}}
