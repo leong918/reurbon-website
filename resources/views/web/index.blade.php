@@ -28,9 +28,9 @@
         </div>
     
         <section class="tt-section bg-red-mesh">
-            <div class="container mx-auto px-4">
-                <div class="text-white md:px-20">
-                    <div class="max-w-5xl mx-auto space-y-10">
+            <div class="@container container mx-auto px-4">
+                <div class="text-white">
+                    <div class="mx-auto space-y-10">
                         <!-- Header Section -->
                         <div>
                             <p class="text-sm uppercase tracking-wide font-(family:--font-anybody-ultracondensed) text-white/80">

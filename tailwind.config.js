@@ -1,15 +1,8 @@
 export default {
-  content: [
-    "./resources/**/*.blade.php",
-    "./resources/**/*.js",
-    "./resources/**/*.vue"
-  ],
-  theme: {
-    container: {
-      center: true,
-      padding: '1rem'
-    },
-    extend: {},
-  },
-  plugins: [],
+    content: [
+        "./resources/**/*.vue",
+        "./resources/**/*.js",
+        "./resources/views/**/*.blade.php",
+    ],
+    plugins: [],
 };
