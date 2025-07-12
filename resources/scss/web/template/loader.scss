@@ -190,6 +190,8 @@
 }
 
 .loader__content {
+  pointer-events: none;
+  touch-action: none;
   position: absolute;
   left: 50%;
   top: 50%;

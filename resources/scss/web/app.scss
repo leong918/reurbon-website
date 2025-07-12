@@ -8,16 +8,14 @@
 @import 'template/helper';
 @import 'template/theme';
 
-
-
-// // variables folder
+// variables folder
 @import 'variables/root';
 @import 'variables/colors';
 @import 'variables/fonts';
 @import 'variables/typography';
 
-// // plugins folder
-// @import 'plugins/bootstrap';
+// pages folder
+@import 'pages/home';
 
 body {
   font-family: 'Cabinet Grotesk', sans-serif;
