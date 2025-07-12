@@ -16,9 +16,7 @@ $(function () {
         hideLoader();
     });
 
-    const images = [
-        "images/home/banner.jpg",
-    ];
+    const images = ["images/home/banner.jpg"];
 
     new RGBKineticSlider({
         slideImages: images,
@@ -26,8 +24,10 @@ $(function () {
         canvasId: "kinetic-slider",
         width: window.innerWidth,
         height: window.innerHeight,
-        cursorScaleIntensity: 0.25,
-        cursorMomentum: 0.14,
-        transitionDuration: 1.2,
+        mirageFreq: 8,
+        mirageAmp: 0.015,
+        mirageSpeed: 3,
+        cursorScaleIntensity: 0.3,
+        cursorMomentum: 0.1,
     });
 });
