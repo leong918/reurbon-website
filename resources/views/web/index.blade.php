@@ -96,32 +96,42 @@
         </section>
 
         <section class="pt-[175px] pb-[85px] bg-light-grey">
-            <div class="@container container px-4 mx-auto">
-                <div class="flex flex-wrap gap-x-[46px] gap-y-[20px] items-stretch">
+            <div class="@container md:container px-4 lg:px-[50px] mx-auto">
+                <div class="flex flex-wrap gap-x-[46px] gap-y-[20px] items-stretch justify-center">
                     <!-- Left image and text -->
-                    <div class="flex-2 flex flex-col h-full">
+                    <div class="lg:flex-[0_0_30%] flex flex-col h-full">
                         <div class="relative h-full">
                             <div class="w-full rounded-[28px] overflow-hidden shadow-[0_4_4px_0_rgba(0,0,0,0.25)] h-full">
                                 <img src="{{ asset('/images/home/city-walk.jpg') }}" alt="City Walk"
                                     class="object-cover w-full h-full" />
                             </div>
-                            <div class="absolute inset-0 rounded-[16px] flex items-center justify-center">
-                                <div class="text-white text-center px-4">
-                                    <p class="text-xl font-semibold">At Reurbon,<br />we do it diffrent</p>
-                                </div>
+                            <div class="absolute inset-0 bg-gradient-to-b from-black/80 via-transparent to-transparent 
+                                rounded-[28px]"></div>
+                            <div class="absolute inset-0 top-[40px] left-[44px]">
+                                <p class="text-[46px] font-[500] leading-[60px] text-white">
+                                    At Reurbon,<br />we do it diffrent
+                                </p>
                             </div>
                         </div>
                     </div>
 
                     <!-- Right content list -->
-                    <div class="flex-[1_5_auto] self-stretch">
+                    <div class="lg:flex-[0_0_60%] self-stretch">
                         <div class="flex flex-col gap-y-[20px] h-full">
                             <!-- Item 1 -->
-                            <div class="flex gap-4 p-6 rounded-[16px] bg-light-gray h-3/1">
-                                <div class="text-5xl font-bold text-red-600">1</div>
-                                <div>
-                                    <h4 class="font-semibold text-lg">Strategic Planning in Creativity</h4>
-                                    <p class="text-sm text-gray-700">
+                            <div class="flex gap-[40px] py-[30px] px-[20px] lg:py-[49px] lg:px-[69px] rounded-[28px] bg-light-gray lg:h-3/1 flex-col lg:flex-row">
+                                <div class="lg:w-1/7">
+                                    <div class="text-[150px] lg:text-[200px] font-[400] text-secondary leading-[150px] px-[20px] lg:px-0">
+                                        1
+                                    </div>
+                                </div>
+                                <div class="lg:w-3/7">
+                                    <h4 class="font-[500] text-[24px] lg:text-[30px] leading-[24px] lg:leading-[37px] text-theme">
+                                        Strategic Planning in Creativity
+                                    </h4>
+                                </div>
+                                <div class="lg:w-3/7">
+                                    <p class="text-[16px] lg:text-[22px] leading-[24px] lg:leading-[31px] font-[400] text-dark-theme">
                                         We do beautiful designs and structured IT by elaborate planning to ensure that great
                                         results
                                         are inline.
@@ -130,11 +140,19 @@
                             </div>
 
                             <!-- Item 2 -->
-                            <div class="flex gap-4 p-6 rounded-[16px] bg-light-gray h-3/1">
-                                <div class="text-5xl font-bold text-red-600">2</div>
-                                <div>
-                                    <h4 class="font-semibold text-lg">Integrated IT Ecosystems</h4>
-                                    <p class="text-sm text-gray-700">
+                            <div class="flex gap-[40px] py-[30px] px-[20px] lg:py-[49px] lg:px-[69px] rounded-[28px] bg-light-gray lg:h-3/1 flex-col lg:flex-row">
+                                <div class="lg:w-1/7">
+                                    <div class="text-[150px] lg:text-[200px] font-[400] text-secondary leading-[150px] px-[20px] lg:px-0">
+                                        2
+                                    </div>
+                                </div>
+                                <div class="lg:w-3/7">
+                                    <h4 class="font-[500] text-[24px] lg:text-[30px] leading-[24px] lg:leading-[37px] text-theme">
+                                        Integrated IT Ecosystems
+                                    </h4>
+                                </div>
+                                <div class="lg:w-3/7">
+                                    <p class="text-[22px] leading-[31px] font-[400] text-dark-theme">
                                         We bring together expert marketers and creative designers to bring out marketing
                                         strategy
                                         messages and build a strong core brand visual identity.
@@ -143,11 +161,19 @@
                             </div>
 
                             <!-- Item 3 -->
-                            <div class="flex gap-4 p-6 rounded-[16px] bg-light-gray h-3/1">
-                                <div class="text-5xl font-bold text-red-600">3</div>
-                                <div>
-                                    <h4 class="font-semibold text-lg">Budget-Friendly Pricing</h4>
-                                    <p class="text-sm text-gray-700">
+                            <div class="flex gap-[40px] py-[30px] px-[20px] lg:py-[49px] lg:px-[69px] rounded-[28px] bg-light-gray lg:h-3/1 flex-col lg:flex-row">
+                                <div class="lg:w-1/7">
+                                    <div class="text-[150px] lg:text-[200px] font-[400] text-secondary leading-[150px] px-[20px] lg:px-0">
+                                        3
+                                    </div>
+                                </div>
+                                <div class="lg:w-3/7">
+                                    <h4 class="font-[500] text-[24px] lg:text-[30px] leading-[24px] lg:leading-[37px] text-theme">
+                                        Budget-Friendly Pricing
+                                    </h4>
+                                </div>
+                                <div class="lg:w-3/7">
+                                    <p class="text-[22px] leading-[31px] font-[400] text-dark-theme">
                                         We deliver powerful IT works in affordable prices while maintaining quality.
                                     </p>
                                 </div>
@@ -159,23 +185,25 @@
         </section>
 
         <section class="py-[90px] bg-light-grey">
-            <div class="@container container px-4 mx-auto px-4 flex flex-col lg:flex-row items-center gap-10">
+            <div class="@container container px-4 mx-auto px-4 lg:px-[50px] flex flex-col lg:flex-row gap-10 justify-center">
 
                 <!-- Image First on Mobile -->
-                <div class="order-1 lg:order-3 w-full lg:w-1/2 rounded-tr-[20px] rounded-br-[20px] overflow-hidden">
-                    <img src="{{ asset('images/home/brand.png') }}" alt="Red Black Abstract" class="w-full object-cover" />
+                <div class="order-1 lg:order-2 w-full flex-[0_0_45%]">
+                    <img src="{{ asset('images/home/brand.png') }}" alt="Red Black Abstract" class="object-contain max-w-full lg:absolute lg:right-[0]" />
                 </div>
 
                 <!-- Text Content Last on Mobile -->
-                <div class="order-2 lg:order-1 w-full lg:w-1/2 space-y-6 text-center lg:text-left">
-                    <p class="text-sm text-gray-500">What you can expect</p>
+                <div class="order-2 lg:order-1 w-full flex-[0_0_45%] space-y-6 text-center lg:text-start lg:py-[150px]">
+                    <p class="text-[21px] leading-[27px] text-light-theme font-(family:--font-anybody-ultracondensed) text-gray-500">
+                        What you can expect
+                    </p>
 
-                    <h2 class="text-3xl font-light text-black leading-snug">
+                    <h2 class="text-[46px] leading-[60px] font-[500] text-theme">
                         Crafting <span class="text-red-600 font-normal">Brands</span><br />
-                        with <em>Soul</em>
+                        with <em class="font-[family:--font-ogg-trial] font-[300] font-italic">Soul</em>
                     </h2>
 
-                    <p class="text-gray-600 text-sm leading-relaxed max-w-md mx-auto lg:mx-0">
+                    <p class="text-[22px] leading-[31px] font-[400] text-dark-theme max-w-[600px] mx-auto lg:mx-0">
                         We make spiritless brands vivid soul. At Reurbon, we blend big ideas and super technologies to
                         create impactful connections. Our works stand out, evolved your brand with a interesting spirit.
                     </p>
@@ -189,11 +217,15 @@
 
                 <!-- Left: Heading + Description -->
                 <div class="order-2 lg:order-1 w-full lg:w-1/2 space-y-4 text-center lg:text-left">
-                    <p class="text-sm text-gray-500">What we provide</p>
-                    <h2 class="text-3xl font-light text-black">
-                        Our <em class="text-red-600 not-italic">Services</em>
+                    <p class="text-[21px] leading-[27px] font-(family:--font-anybody-ultracondensed) text-gray-500">
+                        What we provide
+                    </p>
+                    <h2 class="text-[46px] leading-[60px] font-[500] text-theme">
+                        Our <span class="font-[family:--font-ogg-trial] font-[300] font-italic">
+                            <em class="text-secondary">Se</em>rvices
+                        </span>
                     </h2>
-                    <p class="text-sm text-gray-600 max-w-sm mx-auto lg:mx-0">
+                    <p class="text-[22px] leading-[31px] font-[400] text-dark-theme max-w-[600px] mx-auto lg:mx-0">
                         For B2B and SMEs that struggling to drive growth. We passionate about craft branding that stick to
                         deliver best result with ideal clients.
                     </p>
@@ -204,8 +236,10 @@
 
                     <!-- IT Software Dev -->
                     <div class="border-t pt-4 space-y-2">
-                        <h3 class="font-semibold text-base text-black">IT Software Dev</h3>
-                        <ul class="space-y-1">
+                        <h3 class="font-[500] text-[30px] leading-[37px] text-theme mb-[25px]">
+                            IT Software Dev
+                        </h3>
+                        <ul class="text-[22px] leading-[31px] font-[400] space-y-[14px]">
                             <li class="flex items-start gap-2"><span class="text-red-500">●</span> Website & Mobile
                                 Development</li>
                             <li class="flex items-start gap-2"><span class="text-red-500">●</span> E-Commerce System</li>
@@ -218,8 +252,10 @@
 
                     <!-- Creative Design -->
                     <div class="border-t pt-4 space-y-2">
-                        <h3 class="font-semibold text-base text-black">Creative Design</h3>
-                        <ul class="space-y-1">
+                        <h3 class="font-[500] text-[30px] leading-[37px] text-theme mb-[25px]">
+                            Creative Design
+                        </h3>
+                        <ul class="text-[22px] leading-[31px] font-[400] space-y-[14px]">
                             <li class="flex items-start gap-2"><span class="text-red-500">●</span> Branding & Digital
                                 Identity</li>
                             <li class="flex items-start gap-2"><span class="text-red-500">●</span> UI/UX Design</li>
@@ -229,9 +265,11 @@
                     </div>
 
                     <!-- Digital Marketing -->
-                    <div class="border-t pt-4 space-y-2">
-                        <h3 class="font-semibold text-base text-black">Digital Marketing</h3>
-                        <ul class="space-y-1">
+                    <div class="border-t pt-4 space-y-2 border-b pb-4">
+                        <h3 class="font-[500] text-[30px] leading-[37px] text-theme mb-[25px]">
+                            Digital Marketing
+                        </h3>
+                        <ul class="text-[22px] leading-[31px] font-[400] space-y-[14px]">
                             <li class="flex items-start gap-2"><span class="text-red-500">●</span> SEO & Content Strategy
                             </li>
                             <li class="flex items-start gap-2"><span class="text-red-500">●</span> Lead Generation &
@@ -248,7 +286,7 @@
 
 
 
-        <div class="tt-section"> 
+        <section class="bg-light-grey py-[90px]"> 
             <div class="tt-section-inner">
                 <div id="portfolio-grid" class="pgi-hover">
                     <div class="tt-grid ttgr-layout-creative-2 ttgr-gap-4">
@@ -390,7 +428,7 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- ... -->
         <div class="tt-section padding-top-xlg-150 padding-bottom-xlg-150">
             <div class="tt-section-inner tt-wrap">
