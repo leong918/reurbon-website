@@ -109,10 +109,6 @@ body {
 	overflow-x: hidden;
 }
 
-p { 
-	margin: 0 0 30px; 
-}
-
 a {
 	color: currentColor;
 	text-decoration: none;
@@ -581,34 +577,6 @@ body.tt-magic-cursor #magic-cursor {
 	margin-right: auto;
 	z-index: 2;
 }
-
-
-/* ------------------------------------------------------------- *
- * Headings
-/* ------------------------------------------------------------- */
-
-.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-	font-weight: bold;
-	font-weight: 600;
-	color: inherit;
-}
-.h1, .h2, .h3, h1, h2, h3 {
-	line-height: 1.4;
-	margin-top: 0px;
-	margin-bottom: 30px;
-}
-.h4, .h5, .h6, h4, h5, h6 {
-	line-height: 1.4;
-	margin-top: 10px;
-	margin-bottom: 30px;
-}
-
-.h1, h1 { font-size: 48px; }
-.h2, h2 { font-size: 40px; }
-.h3, h3 { font-size: 36px; }
-.h4, h4 { font-size: 30px; }
-.h5, h5 { font-size: 26px; }
-.h6, h6 { font-size: 21px; }
 
 
 /* ------------------------------------------------------------- *
