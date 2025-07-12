@@ -92,6 +92,14 @@
         let slideTexts;
         let slideTextsSub;
 
+        // preload images so that imagesLoaded can track them
+        const images = [];
+        for (let i = 0; i < options.slideImages.length; i++) {
+            const img = new Image();
+            img.src = options.slideImages[i];
+            images.push(img);
+        }
+
         // slide index
         let currentIndex = 0;
         // swipping flag
