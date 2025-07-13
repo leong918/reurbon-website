@@ -1,10 +1,9 @@
-import './bootstrap';
+import "./bootstrap";
 
 // plugins
-import './plugins/swup';
+import "./plugins/swup";
 
 // template
-import './template/scrollbar';
+import "./template/scrollbar";
 
-import './usage';
-
+import "./usage";

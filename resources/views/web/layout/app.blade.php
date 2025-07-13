@@ -30,7 +30,13 @@
             </div>
         </div>
     </main>
-
+    <!-- Kinetic JS -->
+    <script src="js/imagesLoaded.pkgd.min.js"></script>
+    <script src="js/pixi.min.js"></script>
+    <script src="js/pixi-filters.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <!-- Template master JS -->
+    <script src="js/rgbKineticSlider.js"></script>
     @stack('scripts')
 </body>
 

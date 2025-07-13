@@ -4,5 +4,6 @@ export default {
         "./resources/**/*.js",
         "./resources/views/**/*.blade.php",
     ],
+    important: true,
     plugins: [],
 };

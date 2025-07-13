@@ -1,7 +1,14 @@
 #home {
-  .bg-red-mesh {
-    background-image: url("/public/images/home/background-red-mesh.jpg");
-    background-size: cover;
-    background-position: center;
-  }
+    .bg-red-mesh {
+        background-image: url("/public/images/home/background-red-mesh.jpg");
+        background-size: cover;
+        background-position: center;
+    }
+    .kinetic-slider {
+        canvas {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
 }
