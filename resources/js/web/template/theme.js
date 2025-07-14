@@ -9,7 +9,8 @@ import lgVideo from "lightgallery/plugins/video";
 import lgZoom from "lightgallery/plugins/zoom";
 import Swiper from "swiper/bundle";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import { isMobile } from "./../utils";
+import { isMobile } from "../utils";
+import { initGsapFade } from "../shared/gsapFade";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
@@ -3735,6 +3736,9 @@ export default function initTemplate() {
     $(".tt-btn-disabled").on("click", function () {
         return false;
     });
+
+    // Initialize GSAP fade animations
+    initGsapFade();
 
     // Force page scroll position to top on refresh (do not remove!)
     // =============================================
