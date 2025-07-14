@@ -9,7 +9,7 @@ import lgVideo from "lightgallery/plugins/video";
 import lgZoom from "lightgallery/plugins/zoom";
 import Swiper from "swiper/bundle";
 import { ScrollToPlugin } from "gsap/ScrollToPlugin";
-import { isMobile } from "./../utils";
+import { isMobile } from "../utils";
 import { initGsapFade } from "../shared/gsapFade";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
