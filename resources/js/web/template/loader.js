@@ -9,6 +9,7 @@ import initTemplate from "./theme";
 gsap.registerPlugin(ScrollTrigger);
 
 export function transitOut() {
+    document.getElementById("loader").classList.remove("loaded");
     const tl = gsap.timeline({
         defaults: { duration: 1.2, ease: Expo.easeInOut },
     });

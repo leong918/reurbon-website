@@ -227,6 +227,7 @@ body.tt-transition .ptr-overlay {
     height: 100vh;
     background-color: #111;
     z-index: 1;
+    pointer-events: none;
 }
 
 /* Transition preloader */
