@@ -40,14 +40,13 @@ export function transitOut() {
     });
 
     // 0. 确保整个 loader 可见
-    tl.set("#loader", { autoAlpha: 1 }, 0);
+    tl.set("#loader", { autoAlpha: 1 });
 
     // 1. loader wrapper 从上方滑入
     tl.fromTo(
         ".loader__wrapper",
         { y: "-100%", autoAlpha: 0 },
-        { y: "0%", autoAlpha: 1, duration: 0.6, ease: Expo.easeOut },
-        0
+        { y: "0%", autoAlpha: 1, duration: 0.6, ease: Expo.easeOut }
     );
 
     // 2. 数字容器弹入
@@ -55,7 +54,7 @@ export function transitOut() {
         ".loader__count",
         { scale: 0.8, autoAlpha: 0 },
         { scale: 1, autoAlpha: 1, duration: 0.6, ease: "back.out(1.7)" },
-        0.3
+        "<0.3"
     );
 
     // 3. 蒙层展开
@@ -63,7 +62,7 @@ export function transitOut() {
         ".ptr-overlay",
         { scaleY: 0, transformOrigin: "top center" },
         { scaleY: 1 },
-        0
+        "<"
     );
 
     // 4. 预加载器主体显示
@@ -71,7 +70,7 @@ export function transitOut() {
         ".ptr-preloader",
         { autoAlpha: 0, scale: 0.8 },
         { autoAlpha: 1, scale: 1 },
-        0.2
+        "<0.2"
     );
 }
 
