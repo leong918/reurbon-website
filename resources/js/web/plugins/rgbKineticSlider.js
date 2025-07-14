@@ -1,4 +1,10 @@
 export function initKineticSlider() {
+    const sliderEl = document.getElementById("kinetic-slider");
+    if (!sliderEl) {
+        // Slider element not present on the current page
+        return;
+    }
+
     const images = ["images/home/banner.jpg", "images/home/banner.jpg"];
 
     window.rgbKineticSlider = new rgbKineticSlider({
