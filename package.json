@@ -15,6 +15,7 @@
         "vite": "^6.2.4"
     },
     "dependencies": {
+        "@swup/scripts-plugin": "^2.1.0",
         "bootstrap": "^5.3.7",
         "gsap": "^3.13.0",
         "imagesloaded": "^5.0.0",
