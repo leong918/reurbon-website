@@ -5,7 +5,11 @@
     <section class="section-banner">
         <div class="aspect-[21/10] overflow-hidden">
             <div id="kinetic-slider" class="kinetic-slider text-center">
-
+                <div class="@container container px-4 mx-auto lg:px-[50px]">
+                    <h1>A Brand-Tech <br>
+                        Agency
+                    </h1>
+                </div>
             </div>
         </div>
     </section>

@@ -3751,7 +3751,7 @@ export default function initTemplate() {
         .on("touchend", function () {
             $(this).trigger("hover");
         });
-    $(".hover-default")
+    $(".hover-button")
         .on("mouseenter", function (e) {
             var parentOffset = $(this).offset(),
                 relX = e.pageX - parentOffset.left,
