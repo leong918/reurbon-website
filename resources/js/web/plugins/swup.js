@@ -11,7 +11,7 @@ import { initKineticSlider } from "./rgbKineticSlider";
 const swup = new Swup({
     plugins: [
         new SwupScriptsPlugin({
-            // 允许在页面切换时执行脚本
+            // Allows scripts to run during page transitions
             runScripts: "async",
         }),
     ],
