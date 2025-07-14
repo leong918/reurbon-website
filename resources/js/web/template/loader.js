@@ -40,8 +40,9 @@ export function transitOut() {
         ease: Expo.easeInOut,
     });
 
-    // 0. 确保整个 loader 可见
+    // 0. 确保整个 loader 可见并重置位置
     tl.set("#loader", { autoAlpha: 1 });
+    tl.set([".loader__wrapper", ".loader__count"], { y: 0 });
 
     // 1. loader wrapper 从上方滑入
     tl.fromTo(
