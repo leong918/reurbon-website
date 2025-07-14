@@ -1,4 +1,5 @@
 import Swup from "swup";
+import SwupScriptsPlugin from '@swup/scripts-plugin';
 import {
     startLoader,
     transitOut,
@@ -7,7 +8,14 @@ import {
 } from "../template/loader";
 import { initKineticSlider } from "./rgbKineticSlider";
 
-const swup = new Swup();
+const swup = new Swup({
+    plugins: [
+        new SwupScriptsPlugin({
+            // Allows scripts to run during page transitions
+            runScripts: "async",
+        }),
+    ],
+});
 
 // 1. 点击链接后、切换开始前
 swup.hooks.on("visit:start", () => {

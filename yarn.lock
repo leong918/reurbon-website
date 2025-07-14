@@ -388,6 +388,20 @@
   resolved "https://registry.yarnpkg.com/@rollup/rollup-win32-x64-msvc/-/rollup-win32-x64-msvc-4.44.2.tgz#660018c9696ad4f48abe8c5d56db53c81aadba25"
   integrity sha512-3+QZROYfJ25PDcxFF66UEk8jGWigHJeecZILvkPkyQN7oc5BvFo4YEXFkOs154j3FTMp9mn9Ky8RCOwastduEA==
 
+"@swup/plugin@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@swup/plugin/-/plugin-4.0.0.tgz#5400eef1a5b90d463f591bde9dd40bf59fea5081"
+  integrity sha512-3Kq31BJxnzoPg643YxGoWQggoU6VPKZpdE5CqqmP7wwkpCYTzkRmrfcQ29mGhsSS7xfS7D33iZoBiwY+wPoo2A==
+  dependencies:
+    swup "^4.0.0"
+
+"@swup/scripts-plugin@^2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@swup/scripts-plugin/-/scripts-plugin-2.1.0.tgz#1560bf2f7691fcefd935744e08c1f25a37678e93"
+  integrity sha512-JSMFsFCN9gn4q3m1Ccv0gq3gwRoZl6UGALOQO3OeQ8wOIq9vPC5dcUD3CMBuaPanksjR4GC8ZoukIjHrlT52fg==
+  dependencies:
+    "@swup/plugin" "^4.0.0"
+
 "@tailwindcss/node@4.1.11":
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/@tailwindcss/node/-/node-4.1.11.tgz#d626af65fc9872e5e9d8884791d7e3856e945359"
@@ -1251,7 +1265,7 @@ swiper@^11.2.10:
   resolved "https://registry.yarnpkg.com/swiper/-/swiper-11.2.10.tgz#ed0b17286b56f7fe8d4b46ed61e6e0bd8daaccad"
   integrity sha512-RMeVUUjTQH+6N3ckimK93oxz6Sn5la4aDlgPzB+rBrG/smPdCTicXyhxa+woIpopz+jewEloiEE3lKo1h9w2YQ==
 
-swup@^4.8.2:
+swup@^4.0.0, swup@^4.8.2:
   version "4.8.2"
   resolved "https://registry.yarnpkg.com/swup/-/swup-4.8.2.tgz#51e12dad05eb7ea8f0ffb3d60ebff9f545643d48"
   integrity sha512-Art2vB4idZ7EFZQhhA47ZifkmZMPgcAwE6z28BhorbTYCO8jcovcc5MasX49GGdXYJWO43DTut7iZb5yrQdEfA==
