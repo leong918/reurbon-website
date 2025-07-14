@@ -1,7 +1,9 @@
 // transitions.js
+import $ from "jquery";
 import { gsap, Expo } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { StartBaseTransition } from "./transition";
+import { isMobile } from "./../utils";
 import initTemplate from "./theme";
 
 gsap.registerPlugin(ScrollTrigger);
