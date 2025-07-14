@@ -11,7 +11,7 @@
     </section>
 
     <section id="page-header" class="ph-ghost-scroll ph-image-cropped ph-content-parallax bg-light-grey py-[180px]">
-        <div class="@container container px-4 mx-auto">
+        <div class="@container container px-4 mx-auto lg:px-[50px]">
             <div class="ph-caption">
                 <h1 class="ph-caption-title">
                     <p class="text-[46px] mb-0 font-[500] text-theme">
@@ -30,7 +30,7 @@
     </section>
 
     <section class="py-[150px] bg-red-mesh">
-        <div class="@container container px-4 mx-auto">
+        <div class="@container container px-4 mx-auto lg:px-[50px]">
             <div class="text-white">
                 <div class="mx-auto space-y-10">
                     <!-- Header Section -->
@@ -202,7 +202,7 @@
 
     <section class="py-[90px] bg-light-grey">
         <div
-            class="@container container px-4 mx-auto px-4 lg:px-[50px] flex flex-col lg:flex-row gap-10 justify-center">
+            class="@container container px-4 mx-auto lg:px-[50px] flex flex-col lg:flex-row gap-10 justify-center">
 
             <!-- Image First on Mobile -->
             <div class="order-1 lg:order-2 w-full flex-[0_0_45%]">
@@ -219,7 +219,7 @@
 
                 <h2 class="text-[46px] leading-[60px] font-[500] text-theme">
                     Crafting <span class="text-red-600 font-normal">Brands</span><br />
-                    with <em class="font-[family:--font-ogg-trial] font-[300] font-italic">Soul</em>
+                    with <em class="font-(family-name:--font-ogg-text-trial) font-[300] font-italic">Soul</em>
                 </h2>
 
                 <p class="text-[22px] leading-[31px] font-[400] text-dark-theme max-w-[600px] mx-auto lg:mx-0">
@@ -232,7 +232,7 @@
     </section>
 
     <section class="py-[90px] bg-light-grey">
-        <div class="@container container px-4 mx-auto px-4 flex flex-col lg:flex-row gap-10">
+        <div class="@container container px-4 mx-auto lg:px-[50px] flex flex-col lg:flex-row gap-10">
 
             <!-- Left: Heading + Description -->
             <div class="order-2 lg:order-1 w-full lg:w-1/2 space-y-4 text-center lg:text-left">
@@ -240,7 +240,7 @@
                     What we provide
                 </p>
                 <h2 class="text-[46px] leading-[60px] font-[500] text-theme">
-                    Our <span class="font-[family:--font-ogg-trial] font-[300] font-italic">
+                    Our <span class="font-(family-name:--font-ogg-text-trial) font-[300] font-italic">
                         <em class="text-secondary">Se</em>rvices
                     </span>
                 </h2>
