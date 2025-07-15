@@ -3080,7 +3080,7 @@ export default function initTemplate() {
         $(".tt-sliding-sidebar-wrap").appendTo("#body-inner");
 
         // Open/close sliding sidebar.
-        $(".tt-sliding-sidebar-trigger").on("click", function () {
+        $("[data-sliding-sidebar-toggle]").on("click", function () {
             $("body").toggleClass("tt-sliding-sidebar-open");
         });
         $(".tt-sliding-sidebar-close").on("click", function () {
