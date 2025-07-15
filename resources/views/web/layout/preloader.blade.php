@@ -8,5 +8,3 @@
         </div>
     </div>
 </div>
-
-<div class="ptr-overlay"></div>
