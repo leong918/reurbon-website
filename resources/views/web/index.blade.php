@@ -3,29 +3,35 @@
 @section('content')
 <div id="home">
     <section class="section-banner">
-        <div class="aspect-[21/10] overflow-hidden">
+        <div class="h-[890px] overflow-hidden">
             <div id="kinetic-slider" class="kinetic-slider text-center">
-                <div class="@container container px-4 mx-auto lg:px-[50px]">
-                    <h1>A Brand-Tech <br>
+                <div class="@container container px-4 mx-auto pt-[148px] pb-13 flex z-10 h-full flex-col justify-between">
+                    <h1 class="text-[92px] text-light-white text-start leading-[0.8] font-[400] tracking-tight" data-gsap-fade="left" data-fade-amount="35" data-delay="1.9">A Brand-Tech <br>
                         Agency
                     </h1>
+                    <div class="flex items-end justify-between">
+                        <p class="text-[22px] text-light-white" data-gsap-fade data-delay="2.6" data-duration="1.2" data-start="top 95%">Powered by © Reurbon</p>
+                        <h1 class="text-[92px] text-light-white text-end leading-[0.8] font-[400] tracking-tight" data-gsap-fade="right" data-fade-amount="35" data-delay="2.2">Who*Born <br>
+                            Something Fresh
+                        </h1>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="page-header" class="ph-ghost-scroll ph-image-cropped ph-content-parallax bg-light-grey py-[180px]">
-        <div class="@container container px-4 mx-auto lg:px-[50px]">
+    <section id="page-header" class="ph-ghost-scroll ph-image-cropped ph-content-parallax bg-light-grey py-[320px] pt-[170px]">
+        <div class="@container container px-4 mx-auto">
             <div class="ph-caption">
                 <h1 class="ph-caption-title">
-                    <p class="text-[46px] mb-0 font-[500] text-theme">
+                    <p class="text-[46px] mb-0 font-[500] text-theme leading-[1.2] tracking-tight lg:max-w-[80%]">
                         One stop service of creative brand-tech agency with branding design, IT software development and
                         marketing services. We drive B2B and SMEs to a new generation of creative and strategic.
                     </p>
                 </h1>
                 <div class="ph-caption-title-ghost">
                     <div
-                        class="ph-appear text-[300px] text-theme font-[500] font-(family-name:--font-anybody)">
+                        class="ph-appear text-[260px] text-theme font-[500] font-(family-name:--font-anybody) tracking-wide">
                         WE ARE REURBON
                     </div>
                 </div>
@@ -34,11 +40,11 @@
     </section>
 
     <section class="py-[150px] bg-red-mesh">
-        <div class="@container container px-4 mx-auto lg:px-[50px]">
+        <div class="@container container px-4 mx-auto">
             <div class="text-white">
                 <div class="mx-auto space-y-10">
                     <!-- Header Section -->
-                    <div>
+                    <div data-gsap-fade="left" data-fade-amount="35">
                         <p
                             class="text-[21px] leading-[27px] uppercase tracking-wide font-(family:--font-anybody-ultracondensed) text-light-white">
                             Look Over! Why your business challenge today
@@ -52,7 +58,7 @@
                     <!-- Problem Grid -->
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-10">
                         <!-- Item 1 -->
-                        <div>
+                        <div data-gsap-fade="bottom" data-fade-amount="35">
                             <div class="mb-[36px]">
                                 <!-- Placeholder icon -->
                                 <img src="{{ asset('/images/home/lack-marketing-strategy.svg') }}"
@@ -68,7 +74,7 @@
                         </div>
 
                         <!-- Item 2 -->
-                        <div>
+                        <div data-gsap-fade="bottom" data-fade-amount="35" data-delay="0.3">
                             <div class="mb-[36px]">
                                 <!-- Placeholder icon -->
                                 <img src="{{ asset('/images/home/poorly-brand-identity.svg') }}"
@@ -83,7 +89,7 @@
                         </div>
 
                         <!-- Item 3 -->
-                        <div>
+                        <div data-gsap-fade="bottom" data-fade-amount="35" data-delay="0.6">
                             <div class="mb-[36px]">
                                 <!-- Placeholder icon -->
                                 <img src="{{ asset('/images/home/disconnect-digital-systems.svg') }}"
@@ -104,7 +110,7 @@
     </section>
 
     <section class="pt-[175px] pb-[85px] bg-light-grey">
-        <div class="@container md:container px-4 lg:px-[50px] mx-auto">
+        <div class="@container md:container px-4 mx-auto">
             <div class="flex flex-wrap gap-x-[46px] gap-y-[20px] items-stretch justify-center">
                 <!-- Left image and text -->
                 <div class="lg:flex-[0_0_30%] flex flex-col h-full">
@@ -206,7 +212,7 @@
 
     <section class="py-[90px] bg-light-grey">
         <div
-            class="@container container px-4 mx-auto lg:px-[50px] flex flex-col lg:flex-row gap-10 justify-center">
+            class="@container container px-4 mx-auto flex flex-col lg:flex-row gap-10 justify-center">
 
             <!-- Image First on Mobile -->
             <div class="order-1 lg:order-2 w-full flex-[0_0_45%]">
@@ -236,7 +242,7 @@
     </section>
 
     <section class="py-[90px] bg-light-grey">
-        <div class="@container container px-4 mx-auto lg:px-[50px] flex flex-col lg:flex-row gap-10">
+        <div class="@container container px-4 mx-auto flex flex-col lg:flex-row gap-10">
 
             <!-- Left: Heading + Description -->
             <div class="order-2 lg:order-1 w-full lg:w-1/2 space-y-4 text-center lg:text-left">

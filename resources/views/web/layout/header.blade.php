@@ -1,5 +1,5 @@
 <header id="tt-header" class="tt-header-fixed">
-    <div class="tt-header-inner @container container mx-auto px-4 lg:px-[50px]">
+    <div class="tt-header-inner @container container mx-auto px-4">
         <div class="flex-1">
             <!-- Begin logo -->
             <div class="tt-logo">

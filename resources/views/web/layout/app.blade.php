@@ -30,13 +30,14 @@
             </div>
         </div>
     </main>
-    <!-- Kinetic JS -->
+    <!-- 基础JS库 -->
     <script src="js/imagesLoaded.pkgd.min.js"></script>
     <script src="js/pixi.min.js"></script>
-    <script src="js/pixi-filters.min.js"></script>
     <script src="js/TweenMax.min.js"></script>
-    <!-- Template master JS -->
-    <script src="js/rgbKineticSlider.js"></script>
+
+    <!-- 使用data属性标记需要重载的脚本 -->
+    <script src="js/pixi-filters.min.js" data-swup-reload-script></script>
+    <script src="js/rgbKineticSlider.js" data-swup-reload-script></script>
     @stack('scripts')
 </body>
 

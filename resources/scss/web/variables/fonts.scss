@@ -1,791 +1,832 @@
 /* Cabinet Grotesk */
 @font-face {
-  font-family: 'Cabinet Grotesk';
-  src: url('/public/fonts/CabinetGrotesk-Black.woff2') format('woff2'),
-       url('/public/fonts/CabinetGrotesk-Black.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Cabinet Grotesk";
+    src: url("/public/fonts/CabinetGrotesk-Black.woff2") format("woff2"),
+        url("/public/fonts/CabinetGrotesk-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Cabinet Grotesk';
-  src: url('/public/fonts/CabinetGrotesk-Bold.woff2') format('woff2'),
-       url('/public/fonts/CabinetGrotesk-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Cabinet Grotesk";
+    src: url("/public/fonts/CabinetGrotesk-Bold.woff2") format("woff2"),
+        url("/public/fonts/CabinetGrotesk-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Cabinet Grotesk';
-  src: url('/public/fonts/CabinetGrotesk-Extrabold.woff2') format('woff2'),
-       url('/public/fonts/CabinetGrotesk-Extrabold.woff') format('woff');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Cabinet Grotesk";
+    src: url("/public/fonts/CabinetGrotesk-Extrabold.woff2") format("woff2"),
+        url("/public/fonts/CabinetGrotesk-Extrabold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Cabinet Grotesk';
-  src: url('/public/fonts/CabinetGrotesk-Extralight.woff2') format('woff2'),
-       url('/public/fonts/CabinetGrotesk-Extralight.woff') format('woff');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Cabinet Grotesk";
+    src: url("/public/fonts/CabinetGrotesk-Extralight.woff2") format("woff2"),
+        url("/public/fonts/CabinetGrotesk-Extralight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Cabinet Grotesk';
-  src: url('/public/fonts/CabinetGrotesk-Light.woff2') format('woff2'),
-       url('/public/fonts/CabinetGrotesk-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Cabinet Grotesk";
+    src: url("/public/fonts/CabinetGrotesk-Light.woff2") format("woff2"),
+        url("/public/fonts/CabinetGrotesk-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Cabinet Grotesk';
-  src: url('/public/fonts/CabinetGrotesk-Medium.woff2') format('woff2'),
-       url('/public/fonts/CabinetGrotesk-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Cabinet Grotesk";
+    src: url("/public/fonts/CabinetGrotesk-Medium.woff2") format("woff2"),
+        url("/public/fonts/CabinetGrotesk-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Cabinet Grotesk';
-  src: url('/public/fonts/CabinetGrotesk-Regular.woff2') format('woff2'),
-       url('/public/fonts/CabinetGrotesk-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Cabinet Grotesk";
+    src: url("/public/fonts/CabinetGrotesk-Regular.woff2") format("woff2"),
+        url("/public/fonts/CabinetGrotesk-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Cabinet Grotesk';
-  src: url('/public/fonts/CabinetGrotesk-Thin.woff2') format('woff2'),
-       url('/public/fonts/CabinetGrotesk-Thin.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Cabinet Grotesk";
+    src: url("/public/fonts/CabinetGrotesk-Thin.woff2") format("woff2"),
+        url("/public/fonts/CabinetGrotesk-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
 }
 
 /* Ogg Text TRIAL */
 @font-face {
-  font-family: 'Ogg Text TRIAL';
-  src: url('/public/fonts/OggTextTRIAL-Bold.woff2') format('woff2'),
-       url('/public/fonts/OggTextTRIAL-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Ogg Text TRIAL";
+    src: url("/public/fonts/OggTextTRIAL-Bold.woff2") format("woff2"),
+        url("/public/fonts/OggTextTRIAL-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Ogg Text TRIAL';
-  src: url('/public/fonts/OggTextTRIAL-BoldItalic.woff2') format('woff2'),
-       url('/public/fonts/OggTextTRIAL-BoldItalic.woff') format('woff');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Ogg Text TRIAL";
+    src: url("/public/fonts/OggTextTRIAL-BoldItalic.woff2") format("woff2"),
+        url("/public/fonts/OggTextTRIAL-BoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Ogg Text TRIAL';
-  src: url('/public/fonts/OggTextTRIAL-Book.woff2') format('woff2'),
-       url('/public/fonts/OggTextTRIAL-Book.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Ogg Text TRIAL";
+    src: url("/public/fonts/OggTextTRIAL-Book.woff2") format("woff2"),
+        url("/public/fonts/OggTextTRIAL-Book.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Ogg Text TRIAL';
-  src: url('/public/fonts/OggTextTRIAL-BookItalic.woff2') format('woff2'),
-       url('/public/fonts/OggTextTRIAL-BookItalic.woff') format('woff');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Ogg Text TRIAL";
+    src: url("/public/fonts/OggTextTRIAL-BookItalic.woff2") format("woff2"),
+        url("/public/fonts/OggTextTRIAL-BookItalic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Ogg Text TRIAL';
-  src: url('/public/fonts/OggTextTRIAL-Extrabold.woff2') format('woff2'),
-       url('/public/fonts/OggTextTRIAL-Extrabold.woff') format('woff');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Ogg Text TRIAL";
+    src: url("/public/fonts/OggTextTRIAL-Extrabold.woff2") format("woff2"),
+        url("/public/fonts/OggTextTRIAL-Extrabold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Ogg Text TRIAL';
-  src: url('/public/fonts/OggTextTRIAL-ExtraboldItalic.woff2') format('woff2'),
-       url('/public/fonts/OggTextTRIAL-ExtraboldItalic.woff') format('woff');
-  font-weight: 800;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Ogg Text TRIAL";
+    src: url("/public/fonts/OggTextTRIAL-ExtraboldItalic.woff2") format("woff2"),
+        url("/public/fonts/OggTextTRIAL-ExtraboldItalic.woff") format("woff");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Ogg Text TRIAL';
-  src: url('/public/fonts/OggTextTRIAL-Light.woff2') format('woff2'),
-       url('/public/fonts/OggTextTRIAL-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Ogg Text TRIAL";
+    src: url("/public/fonts/OggTextTRIAL-Light.woff2") format("woff2"),
+        url("/public/fonts/OggTextTRIAL-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Ogg Text TRIAL';
-  src: url('/public/fonts/OggTextTRIAL-LightItalic.woff2') format('woff2'),
-       url('/public/fonts/OggTextTRIAL-LightItalic.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Ogg Text TRIAL";
+    src: url("/public/fonts/OggTextTRIAL-LightItalic.woff2") format("woff2"),
+        url("/public/fonts/OggTextTRIAL-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Ogg Text TRIAL';
-  src: url('/public/fonts/OggTextTRIAL-Medium.woff2') format('woff2'),
-       url('/public/fonts/OggTextTRIAL-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Ogg Text TRIAL";
+    src: url("/public/fonts/OggTextTRIAL-Medium.woff2") format("woff2"),
+        url("/public/fonts/OggTextTRIAL-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Ogg Text TRIAL';
-  src: url('/public/fonts/OggTextTRIAL-MediumItalic.woff2') format('woff2'),
-       url('/public/fonts/OggTextTRIAL-MediumItalic.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Ogg Text TRIAL";
+    src: url("/public/fonts/OggTextTRIAL-MediumItalic.woff2") format("woff2"),
+        url("/public/fonts/OggTextTRIAL-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
 }
 
 /* Ogg TRIAL */
 @font-face {
-  font-family: 'Ogg TRIAL';
-  src: url('/public/fonts/OggTRIAL-Bold.woff2') format('woff2'),
-       url('/public/fonts/OggTRIAL-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Ogg TRIAL";
+    src: url("/public/fonts/OggTRIAL-Bold.woff2") format("woff2"),
+        url("/public/fonts/OggTRIAL-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Ogg TRIAL';
-  src: url('/public/fonts/OggTRIAL-BoldItalic.woff2') format('woff2'),
-       url('/public/fonts/OggTRIAL-BoldItalic.woff') format('woff');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Ogg TRIAL";
+    src: url("/public/fonts/OggTRIAL-BoldItalic.woff2") format("woff2"),
+        url("/public/fonts/OggTRIAL-BoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Ogg TRIAL';
-  src: url('/public/fonts/OggTRIAL-Light.woff2') format('woff2'),
-       url('/public/fonts/OggTRIAL-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Ogg TRIAL";
+    src: url("/public/fonts/OggTRIAL-Light.woff2") format("woff2"),
+        url("/public/fonts/OggTRIAL-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Ogg TRIAL';
-  src: url('/public/fonts/OggTRIAL-LightItalic.woff2') format('woff2'),
-       url('/public/fonts/OggTRIAL-LightItalic.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Ogg TRIAL";
+    src: url("/public/fonts/OggTRIAL-LightItalic.woff2") format("woff2"),
+        url("/public/fonts/OggTRIAL-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Ogg TRIAL';
-  src: url('/public/fonts/OggTRIAL-Medium.woff2') format('woff2'),
-       url('/public/fonts/OggTRIAL-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Ogg TRIAL";
+    src: url("/public/fonts/OggTRIAL-Medium.woff2") format("woff2"),
+        url("/public/fonts/OggTRIAL-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Ogg TRIAL';
-  src: url('/public/fonts/OggTRIAL-MediumItalic.woff2') format('woff2'),
-       url('/public/fonts/OggTRIAL-MediumItalic.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Ogg TRIAL";
+    src: url("/public/fonts/OggTRIAL-MediumItalic.woff2") format("woff2"),
+        url("/public/fonts/OggTRIAL-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Ogg TRIAL';
-  src: url('/public/fonts/OggTRIAL-Regular.woff2') format('woff2'),
-       url('/public/fonts/OggTRIAL-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Ogg TRIAL";
+    src: url("/public/fonts/OggTRIAL-Regular.woff2") format("woff2"),
+        url("/public/fonts/OggTRIAL-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Ogg TRIAL';
-  src: url('/public/fonts/OggTRIAL-RegularItalic.woff2') format('woff2'),
-       url('/public/fonts/OggTRIAL-RegularItalic.woff') format('woff');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Ogg TRIAL";
+    src: url("/public/fonts/OggTRIAL-RegularItalic.woff2") format("woff2"),
+        url("/public/fonts/OggTRIAL-RegularItalic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Ogg TRIAL';
-  src: url('/public/fonts/OggTRIAL-Thin.woff2') format('woff2'),
-       url('/public/fonts/OggTRIAL-Thin.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Ogg TRIAL";
+    src: url("/public/fonts/OggTRIAL-Thin.woff2") format("woff2"),
+        url("/public/fonts/OggTRIAL-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Ogg TRIAL';
-  src: url('/public/fonts/OggTRIAL-ThinItalic.woff2') format('woff2'),
-       url('/public/fonts/OggTRIAL-ThinItalic.woff') format('woff');
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Ogg TRIAL";
+    src: url("/public/fonts/OggTRIAL-ThinItalic.woff2") format("woff2"),
+        url("/public/fonts/OggTRIAL-ThinItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
 }
 
 /* Anybody */
 @font-face {
-  font-family: 'Anybody';
-  src: url('/public/fonts/Anybody-Regular.woff2') format('woff2'),
-       url('/public/fonts/Anybody-Regular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody";
+    src: url("/public/fonts/Anybody-Regular.woff2") format("woff2"),
+        url("/public/fonts/Anybody-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody';
-  src: url('/public/fonts/Anybody-Italic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-Italic.woff') format('woff');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody";
+    src: url("/public/fonts/Anybody-Italic.woff2") format("woff2"),
+        url("/public/fonts/Anybody-Italic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody';
-  src: url('/public/fonts/Anybody-Thin.woff2') format('woff2'),
-       url('/public/fonts/Anybody-Thin.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody";
+    src: url("/public/fonts/Anybody-Thin.woff2") format("woff2"),
+        url("/public/fonts/Anybody-Thin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody';
-  src: url('/public/fonts/Anybody-ThinItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ThinItalic.woff') format('woff');
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody";
+    src: url("/public/fonts/Anybody-ThinItalic.woff2") format("woff2"),
+        url("/public/fonts/Anybody-ThinItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody';
-  src: url('/public/fonts/Anybody-ExtraLight.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraLight.woff') format('woff');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody";
+    src: url("/public/fonts/Anybody-ExtraLight.woff2") format("woff2"),
+        url("/public/fonts/Anybody-ExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody';
-  src: url('/public/fonts/Anybody-ExtraLightItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraLightItalic.woff') format('woff');
-  font-weight: 200;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody";
+    src: url("/public/fonts/Anybody-ExtraLightItalic.woff2") format("woff2"),
+        url("/public/fonts/Anybody-ExtraLightItalic.woff") format("woff");
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody';
-  src: url('/public/fonts/Anybody-Light.woff2') format('woff2'),
-       url('/public/fonts/Anybody-Light.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody";
+    src: url("/public/fonts/Anybody-Light.woff2") format("woff2"),
+        url("/public/fonts/Anybody-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody';
-  src: url('/public/fonts/Anybody-LightItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-LightItalic.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody";
+    src: url("/public/fonts/Anybody-LightItalic.woff2") format("woff2"),
+        url("/public/fonts/Anybody-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody';
-  src: url('/public/fonts/Anybody-Medium.woff2') format('woff2'),
-       url('/public/fonts/Anybody-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody";
+    src: url("/public/fonts/Anybody-Medium.woff2") format("woff2"),
+        url("/public/fonts/Anybody-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody';
-  src: url('/public/fonts/Anybody-MediumItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-MediumItalic.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody";
+    src: url("/public/fonts/Anybody-MediumItalic.woff2") format("woff2"),
+        url("/public/fonts/Anybody-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody';
-  src: url('/public/fonts/Anybody-SemiBold.woff2') format('woff2'),
-       url('/public/fonts/Anybody-SemiBold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody";
+    src: url("/public/fonts/Anybody-SemiBold.woff2") format("woff2"),
+        url("/public/fonts/Anybody-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody';
-  src: url('/public/fonts/Anybody-SemiBoldItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-SemiBoldItalic.woff') format('woff');
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody";
+    src: url("/public/fonts/Anybody-SemiBoldItalic.woff2") format("woff2"),
+        url("/public/fonts/Anybody-SemiBoldItalic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody';
-  src: url('/public/fonts/Anybody-Bold.woff2') format('woff2'),
-       url('/public/fonts/Anybody-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody";
+    src: url("/public/fonts/Anybody-Bold.woff2") format("woff2"),
+        url("/public/fonts/Anybody-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody';
-  src: url('/public/fonts/Anybody-BoldItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-BoldItalic.woff') format('woff');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody";
+    src: url("/public/fonts/Anybody-BoldItalic.woff2") format("woff2"),
+        url("/public/fonts/Anybody-BoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody';
-  src: url('/public/fonts/Anybody-ExtraBold.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraBold.woff') format('woff');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody";
+    src: url("/public/fonts/Anybody-ExtraBold.woff2") format("woff2"),
+        url("/public/fonts/Anybody-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody';
-  src: url('/public/fonts/Anybody-ExtraBoldItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraBoldItalic.woff') format('woff');
-  font-weight: 800;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody";
+    src: url("/public/fonts/Anybody-ExtraBoldItalic.woff2") format("woff2"),
+        url("/public/fonts/Anybody-ExtraBoldItalic.woff") format("woff");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody';
-  src: url('/public/fonts/Anybody-Black.woff2') format('woff2'),
-       url('/public/fonts/Anybody-Black.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody";
+    src: url("/public/fonts/Anybody-Black.woff2") format("woff2"),
+        url("/public/fonts/Anybody-Black.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody';
-  src: url('/public/fonts/Anybody-BlackItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-BlackItalic.woff') format('woff');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody";
+    src: url("/public/fonts/Anybody-BlackItalic.woff2") format("woff2"),
+        url("/public/fonts/Anybody-BlackItalic.woff") format("woff");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
 }
 
 /* Anybody Condensed */
 @font-face {
-  font-family: 'Anybody Condensed';
-  src: url('/public/fonts/Anybody-CondensedRegular.woff2') format('woff2'),
-       url('/public/fonts/Anybody-CondensedRegular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody Condensed";
+    src: url("/public/fonts/Anybody-CondensedRegular.woff2") format("woff2"),
+        url("/public/fonts/Anybody-CondensedRegular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody Condensed';
-  src: url('/public/fonts/Anybody-CondensedItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-CondensedItalic.woff') format('woff');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody Condensed";
+    src: url("/public/fonts/Anybody-CondensedItalic.woff2") format("woff2"),
+        url("/public/fonts/Anybody-CondensedItalic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody Condensed';
-  src: url('/public/fonts/Anybody-CondensedThin.woff2') format('woff2'),
-       url('/public/fonts/Anybody-CondensedThin.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody Condensed";
+    src: url("/public/fonts/Anybody-CondensedThin.woff2") format("woff2"),
+        url("/public/fonts/Anybody-CondensedThin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody Condensed';
-  src: url('/public/fonts/Anybody-CondensedThinItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-CondensedThinItalic.woff') format('woff');
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody Condensed";
+    src: url("/public/fonts/Anybody-CondensedThinItalic.woff2") format("woff2"),
+        url("/public/fonts/Anybody-CondensedThinItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody Condensed';
-  src: url('/public/fonts/Anybody-CondensedExtraLight.woff2') format('woff2'),
-       url('/public/fonts/Anybody-CondensedExtraLight.woff') format('woff');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody Condensed";
+    src: url("/public/fonts/Anybody-CondensedExtraLight.woff2") format("woff2"),
+        url("/public/fonts/Anybody-CondensedExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody Condensed';
-  src: url('/public/fonts/Anybody-CondensedExtraLightItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-CondensedExtraLightItalic.woff') format('woff');
-  font-weight: 200;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody Condensed";
+    src: url("/public/fonts/Anybody-CondensedExtraLightItalic.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-CondensedExtraLightItalic.woff")
+            format("woff");
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody Condensed';
-  src: url('/public/fonts/Anybody-CondensedLight.woff2') format('woff2'),
-       url('/public/fonts/Anybody-CondensedLight.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody Condensed";
+    src: url("/public/fonts/Anybody-CondensedLight.woff2") format("woff2"),
+        url("/public/fonts/Anybody-CondensedLight.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody Condensed';
-  src: url('/public/fonts/Anybody-CondensedLightItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-CondensedLightItalic.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody Condensed";
+    src: url("/public/fonts/Anybody-CondensedLightItalic.woff2") format("woff2"),
+        url("/public/fonts/Anybody-CondensedLightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody Condensed';
-  src: url('/public/fonts/Anybody-CondensedMedium.woff2') format('woff2'),
-       url('/public/fonts/Anybody-CondensedMedium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody Condensed";
+    src: url("/public/fonts/Anybody-CondensedMedium.woff2") format("woff2"),
+        url("/public/fonts/Anybody-CondensedMedium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody Condensed';
-  src: url('/public/fonts/Anybody-CondensedMediumItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-CondensedMediumItalic.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody Condensed";
+    src: url("/public/fonts/Anybody-CondensedMediumItalic.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-CondensedMediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody Condensed';
-  src: url('/public/fonts/Anybody-CondensedSemiBold.woff2') format('woff2'),
-       url('/public/fonts/Anybody-CondensedSemiBold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody Condensed";
+    src: url("/public/fonts/Anybody-CondensedSemiBold.woff2") format("woff2"),
+        url("/public/fonts/Anybody-CondensedSemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody Condensed';
-  src: url('/public/fonts/Anybody-CondensedSemiBoldItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-CondensedSemiBoldItalic.woff') format('woff');
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody Condensed";
+    src: url("/public/fonts/Anybody-CondensedSemiBoldItalic.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-CondensedSemiBoldItalic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody Condensed';
-  src: url('/public/fonts/Anybody-CondensedBold.woff2') format('woff2'),
-       url('/public/fonts/Anybody-CondensedBold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody Condensed";
+    src: url("/public/fonts/Anybody-CondensedBold.woff2") format("woff2"),
+        url("/public/fonts/Anybody-CondensedBold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody Condensed';
-  src: url('/public/fonts/Anybody-CondensedBoldItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-CondensedBoldItalic.woff') format('woff');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody Condensed";
+    src: url("/public/fonts/Anybody-CondensedBoldItalic.woff2") format("woff2"),
+        url("/public/fonts/Anybody-CondensedBoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody Condensed';
-  src: url('/public/fonts/Anybody-CondensedExtraBold.woff2') format('woff2'),
-       url('/public/fonts/Anybody-CondensedExtraBold.woff') format('woff');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody Condensed";
+    src: url("/public/fonts/Anybody-CondensedExtraBold.woff2") format("woff2"),
+        url("/public/fonts/Anybody-CondensedExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody Condensed';
-  src: url('/public/fonts/Anybody-CondensedExtraBoldItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-CondensedExtraBoldItalic.woff') format('woff');
-  font-weight: 800;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody Condensed";
+    src: url("/public/fonts/Anybody-CondensedExtraBoldItalic.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-CondensedExtraBoldItalic.woff")
+            format("woff");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
 }
 
 /* Anybody UltraCondensed */
 @font-face {
-  font-family: 'Anybody UltraCondensed';
-  src: url('/public/fonts/Anybody-UltraCondensedRegular.woff2') format('woff2'),
-       url('/public/fonts/Anybody-UltraCondensedRegular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody UltraCondensed";
+    src: url("/public/fonts/Anybody-UltraCondensedRegular.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-UltraCondensedRegular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody UltraCondensed';
-  src: url('/public/fonts/Anybody-UltraCondensedItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-UltraCondensedItalic.woff') format('woff');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody UltraCondensed";
+    src: url("/public/fonts/Anybody-UltraCondensedItalic.woff2") format("woff2"),
+        url("/public/fonts/Anybody-UltraCondensedItalic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody UltraCondensed';
-  src: url('/public/fonts/Anybody-UltraCondensedThin.woff2') format('woff2'),
-       url('/public/fonts/Anybody-UltraCondensedThin.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody UltraCondensed";
+    src: url("/public/fonts/Anybody-UltraCondensedThin.woff2") format("woff2"),
+        url("/public/fonts/Anybody-UltraCondensedThin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody UltraCondensed';
-  src: url('/public/fonts/Anybody-UltraCondensedThinItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-UltraCondensedThinItalic.woff') format('woff');
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody UltraCondensed";
+    src: url("/public/fonts/Anybody-UltraCondensedThinItalic.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-UltraCondensedThinItalic.woff")
+            format("woff");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody UltraCondensed';
-  src: url('/public/fonts/Anybody-UltraCondensedExtraLight.woff2') format('woff2'),
-       url('/public/fonts/Anybody-UltraCondensedExtraLight.woff') format('woff');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody UltraCondensed";
+    src: url("/public/fonts/Anybody-UltraCondensedExtraLight.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-UltraCondensedExtraLight.woff")
+            format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody UltraCondensed';
-  src: url('/public/fonts/Anybody-UltraCondensedExtraLightItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-UltraCondensedExtraLightItalic.woff') format('woff');
-  font-weight: 200;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody UltraCondensed";
+    src: url("/public/fonts/Anybody-UltraCondensedExtraLightItalic.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-UltraCondensedExtraLightItalic.woff")
+            format("woff");
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody UltraCondensed';
-  src: url('/public/fonts/Anybody-UltraCondensedLight.woff2') format('woff2'),
-       url('/public/fonts/Anybody-UltraCondensedLight.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody UltraCondensed";
+    src: url("/public/fonts/Anybody-UltraCondensedLight.woff2") format("woff2"),
+        url("/public/fonts/Anybody-UltraCondensedLight.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody UltraCondensed';
-  src: url('/public/fonts/Anybody-UltraCondensedLightItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-UltraCondensedLightItalic.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody UltraCondensed";
+    src: url("/public/fonts/Anybody-UltraCondensedLightItalic.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-UltraCondensedLightItalic.woff")
+            format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody UltraCondensed';
-  src: url('/public/fonts/Anybody-UltraCondensedMedium.woff2') format('woff2'),
-       url('/public/fonts/Anybody-UltraCondensedMedium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody UltraCondensed";
+    src: url("/public/fonts/Anybody-UltraCondensedMedium.woff2") format("woff2"),
+        url("/public/fonts/Anybody-UltraCondensedMedium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody UltraCondensed';
-  src: url('/public/fonts/Anybody-UltraCondensedMediumItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-UltraCondensedMediumItalic.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody UltraCondensed";
+    src: url("/public/fonts/Anybody-UltraCondensedMediumItalic.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-UltraCondensedMediumItalic.woff")
+            format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody UltraCondensed';
-  src: url('/public/fonts/Anybody-UltraCondensedBold.woff2') format('woff2'),
-       url('/public/fonts/Anybody-UltraCondensedBold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody UltraCondensed";
+    src: url("/public/fonts/Anybody-UltraCondensedBold.woff2") format("woff2"),
+        url("/public/fonts/Anybody-UltraCondensedBold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody UltraCondensed';
-  src: url('/public/fonts/Anybody-UltraCondensedBoldItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-UltraCondensedBoldItalic.woff') format('woff');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody UltraCondensed";
+    src: url("/public/fonts/Anybody-UltraCondensedBoldItalic.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-UltraCondensedBoldItalic.woff")
+            format("woff");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody UltraCondensed';
-  src: url('/public/fonts/Anybody-UltraCondensedExtraBold.woff2') format('woff2'),
-       url('/public/fonts/Anybody-UltraCondensedExtraBold.woff') format('woff');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody UltraCondensed";
+    src: url("/public/fonts/Anybody-UltraCondensedExtraBold.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-UltraCondensedExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody UltraCondensed';
-  src: url('/public/fonts/Anybody-UltraCondensedExtraBoldItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-UltraCondensedExtraBoldItalic.woff') format('woff');
-  font-weight: 800;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody UltraCondensed";
+    src: url("/public/fonts/Anybody-UltraCondensedExtraBoldItalic.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-UltraCondensedExtraBoldItalic.woff")
+            format("woff");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody UltraCondensed';
-  src: url('/public/fonts/Anybody-UltraCondensedBlack.woff2') format('woff2'),
-       url('/public/fonts/Anybody-UltraCondensedBlack.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody UltraCondensed";
+    src: url("/public/fonts/Anybody-UltraCondensedBlack.woff2") format("woff2"),
+        url("/public/fonts/Anybody-UltraCondensedBlack.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody UltraCondensed';
-  src: url('/public/fonts/Anybody-UltraCondensedBlackItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-UltraCondensedBlackItalic.woff') format('woff');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody UltraCondensed";
+    src: url("/public/fonts/Anybody-UltraCondensedBlackItalic.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-UltraCondensedBlackItalic.woff")
+            format("woff");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
 }
 
 /* Anybody ExtraExpanded */
 @font-face {
-  font-family: 'Anybody ExtraExpanded';
-  src: url('/public/fonts/Anybody-ExtraExpandedRegular.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraExpandedRegular.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody ExtraExpanded";
+    src: url("/public/fonts/Anybody-ExtraExpandedRegular.woff2") format("woff2"),
+        url("/public/fonts/Anybody-ExtraExpandedRegular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody ExtraExpanded';
-  src: url('/public/fonts/Anybody-ExtraExpandedItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraExpandedItalic.woff') format('woff');
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody ExtraExpanded";
+    src: url("/public/fonts/Anybody-ExtraExpandedItalic.woff2") format("woff2"),
+        url("/public/fonts/Anybody-ExtraExpandedItalic.woff") format("woff");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody ExtraExpanded';
-  src: url('/public/fonts/Anybody-ExtraExpandedThin.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraExpandedThin.woff') format('woff');
-  font-weight: 100;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody ExtraExpanded";
+    src: url("/public/fonts/Anybody-ExtraExpandedThin.woff2") format("woff2"),
+        url("/public/fonts/Anybody-ExtraExpandedThin.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody ExtraExpanded';
-  src: url('/public/fonts/Anybody-ExtraExpandedThinItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraExpandedThinItalic.woff') format('woff');
-  font-weight: 100;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody ExtraExpanded";
+    src: url("/public/fonts/Anybody-ExtraExpandedThinItalic.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-ExtraExpandedThinItalic.woff") format("woff");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody ExtraExpanded';
-  src: url('/public/fonts/Anybody-ExtraExpandedExtraLight.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraExpandedExtraLight.woff') format('woff');
-  font-weight: 200;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody ExtraExpanded";
+    src: url("/public/fonts/Anybody-ExtraExpandedExtraLight.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-ExtraExpandedExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody ExtraExpanded';
-  src: url('/public/fonts/Anybody-ExtraExpandedExtraLightItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraExpandedExtraLightItalic.woff') format('woff');
-  font-weight: 200;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody ExtraExpanded";
+    src: url("/public/fonts/Anybody-ExtraExpandedExtraLightItalic.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-ExtraExpandedExtraLightItalic.woff")
+            format("woff");
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody ExtraExpanded';
-  src: url('/public/fonts/Anybody-ExtraExpandedLight.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraExpandedLight.woff') format('woff');
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody ExtraExpanded";
+    src: url("/public/fonts/Anybody-ExtraExpandedLight.woff2") format("woff2"),
+        url("/public/fonts/Anybody-ExtraExpandedLight.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody ExtraExpanded';
-  src: url('/public/fonts/Anybody-ExtraExpandedLightItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraExpandedLightItalic.woff') format('woff');
-  font-weight: 300;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody ExtraExpanded";
+    src: url("/public/fonts/Anybody-ExtraExpandedLightItalic.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-ExtraExpandedLightItalic.woff")
+            format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody ExtraExpanded';
-  src: url('/public/fonts/Anybody-ExtraExpandedMedium.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraExpandedMedium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody ExtraExpanded";
+    src: url("/public/fonts/Anybody-ExtraExpandedMedium.woff2") format("woff2"),
+        url("/public/fonts/Anybody-ExtraExpandedMedium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody ExtraExpanded';
-  src: url('/public/fonts/Anybody-ExtraExpandedMediumItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraExpandedMediumItalic.woff') format('woff');
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody ExtraExpanded";
+    src: url("/public/fonts/Anybody-ExtraExpandedMediumItalic.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-ExtraExpandedMediumItalic.woff")
+            format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody ExtraExpanded';
-  src: url('/public/fonts/Anybody-ExtraExpandedSemiBold.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraExpandedSemiBold.woff') format('woff');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody ExtraExpanded";
+    src: url("/public/fonts/Anybody-ExtraExpandedSemiBold.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-ExtraExpandedSemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody ExtraExpanded';
-  src: url('/public/fonts/Anybody-ExtraExpandedSemiBoldItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraExpandedSemiBoldItalic.woff') format('woff');
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody ExtraExpanded";
+    src: url("/public/fonts/Anybody-ExtraExpandedSemiBoldItalic.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-ExtraExpandedSemiBoldItalic.woff")
+            format("woff");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody ExtraExpanded';
-  src: url('/public/fonts/Anybody-ExtraExpandedBold.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraExpandedBold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody ExtraExpanded";
+    src: url("/public/fonts/Anybody-ExtraExpandedBold.woff2") format("woff2"),
+        url("/public/fonts/Anybody-ExtraExpandedBold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody ExtraExpanded';
-  src: url('/public/fonts/Anybody-ExtraExpandedBoldItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraExpandedBoldItalic.woff') format('woff');
-  font-weight: 700;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody ExtraExpanded";
+    src: url("/public/fonts/Anybody-ExtraExpandedBoldItalic.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-ExtraExpandedBoldItalic.woff") format("woff");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody ExtraExpanded';
-  src: url('/public/fonts/Anybody-ExtraExpandedExtraBold.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraExpandedExtraBold.woff') format('woff');
-  font-weight: 800;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody ExtraExpanded";
+    src: url("/public/fonts/Anybody-ExtraExpandedExtraBold.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-ExtraExpandedExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody ExtraExpanded';
-  src: url('/public/fonts/Anybody-ExtraExpandedExtraBoldItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraExpandedExtraBoldItalic.woff') format('woff');
-  font-weight: 800;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody ExtraExpanded";
+    src: url("/public/fonts/Anybody-ExtraExpandedExtraBoldItalic.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-ExtraExpandedExtraBoldItalic.woff")
+            format("woff");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody ExtraExpanded';
-  src: url('/public/fonts/Anybody-ExtraExpandedBlack.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraExpandedBlack.woff') format('woff');
-  font-weight: 900;
-  font-style: normal;
-  font-display: swap;
+    font-family: "Anybody ExtraExpanded";
+    src: url("/public/fonts/Anybody-ExtraExpandedBlack.woff2") format("woff2"),
+        url("/public/fonts/Anybody-ExtraExpandedBlack.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
 }
 @font-face {
-  font-family: 'Anybody ExtraExpanded';
-  src: url('/public/fonts/Anybody-ExtraExpandedBlackItalic.woff2') format('woff2'),
-       url('/public/fonts/Anybody-ExtraExpandedBlackItalic.woff') format('woff');
-  font-weight: 900;
-  font-style: italic;
-  font-display: swap;
+    font-family: "Anybody ExtraExpanded";
+    src: url("/public/fonts/Anybody-ExtraExpandedBlackItalic.woff2")
+            format("woff2"),
+        url("/public/fonts/Anybody-ExtraExpandedBlackItalic.woff")
+            format("woff");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
 }
 
 :root {
-  --font-cabinet-grotesk: 'Cabinet Grotesk', sans-serif;
-  --font-ogg-text-trial: 'Ogg Text TRIAL';
-  --font-ogg-trial: 'Ogg TRIAL';
-  --font-anybody: 'Anybody', sans-serif;
-  --font-anybody-condensed: 'Anybody Condensed', sans-serif;
-  --font-anybody-ultracondensed: 'Anybody UltraCondensed', sans-serif;
-  --font-anybody-extraexpanded: 'Anybody ExtraExpanded', sans-serif;
+    --font-cabinet-grotesk: "Cabinet Grotesk", sans-serif;
+    --font-ogg-text-trial: "Ogg Text TRIAL";
+    --font-ogg-trial: "Ogg TRIAL";
+    --font-anybody: "Anybody", sans-serif;
+    --font-anybody-condensed: "Anybody Condensed", sans-serif;
+    --font-anybody-ultracondensed: "Anybody UltraCondensed", sans-serif;
+    --font-anybody-extraexpanded: "Anybody ExtraExpanded", sans-serif;
 }

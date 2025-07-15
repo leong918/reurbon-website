@@ -77,32 +77,40 @@ export function transitOut() {
 
 export function transitIn() {
     const tl = gsap.timeline({
-        defaults: { duration: 1.2, ease: Expo.easeInOut },
+        defaults: { duration: 2, ease: Expo.easeInOut },
     });
 
     // Hide preloader and overlay
     // tl.to(".ptr-preloader", { autoAlpha: 0 }, 0);
 
-    tl.to(".ptr-overlay", { scaleY: 0, transformOrigin: "top center" }, ">2");
+    tl.to(".ptr-overlay", { scaleY: 0, transformOrigin: "top center" }, ">0.3");
 
-    tl.from("#content-wrap", { y: -80, autoAlpha: 0 });
+    tl.from("#content-wrap", { y: 20, autoAlpha: 0 }, "<0.2");
 
     // Animate header and footer in
-    tl.from("#tt-header", {
-        duration: 1.5,
-        y: 20,
-        autoAlpha: 0,
-        ease: Expo.easeInOut,
-        clearProps: "all",
-    });
+    tl.from(
+        "#tt-header",
+        {
+            y: 12,
+            autoAlpha: 0,
+            duration: 0.65,
+            ease: Expo.easeInOut,
+            clearProps: "all",
+        },
+        "<0.8"
+    );
 
-    tl.from("#tt-footer", {
-        duration: 1.5,
-        y: 20,
-        autoAlpha: 0,
-        ease: Expo.easeInOut,
-        clearProps: "all",
-    });
+    tl.from(
+        "#tt-footer",
+        {
+            y: 20,
+            autoAlpha: 0,
+            duration: 1.0,
+            ease: Expo.easeInOut,
+            clearProps: "all",
+        },
+        "<0.1"
+    );
 }
 
 export function startLoader() {
