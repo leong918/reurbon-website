@@ -1,10 +1,11 @@
 import { gsap } from "gsap";
+import { CustomEase } from "gsap/CustomEase";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import $ from "jquery";
 import { isMobile } from "../utils";
 
 gsap.registerPlugin(ScrollTrigger);
-
+gsap.registerPlugin(CustomEase);
 export function initGsapFade() {
     const $elements = $("[data-gsap-fade]");
     $elements.each(function () {
@@ -44,14 +45,19 @@ export function initGsapFade() {
             default:
                 break; // only fade
         }
+        const delay = parseFloat($el.data("delay")) || 0;
+        const duration = parseFloat($el.data("duration")) || 1.8;
+        const start = $el.data("start") || "top 83%";
+        CustomEase.create("easeFastInSlowOut", "M0,0 C0.2,0 0,1 1,1");
 
         gsap.from($el[0], {
             ...fromVars,
-            ease: "power2.out",
-            duration: 1,
+            ease: "easeFastInSlowOut",
+            duration: duration,
+            delay: delay,
             scrollTrigger: {
                 trigger: $el[0],
-                start: "top 80%",
+                start: start,
                 toggleActions: "play none none reverse",
             },
         });

@@ -2016,11 +2016,6 @@ body:not(.tt-boxed) .page-header-inner,
 .ph-caption-title {
     position: relative;
     margin: 0;
-    font-size: clamp(38px, 5vw, 82px);
-    font-weight: bold;
-    font-weight: 600;
-    color: #fff;
-    line-height: 1.2;
     z-index: 9;
 }
 
@@ -2031,11 +2026,8 @@ body:not(.tt-boxed) .page-header-inner,
     align-items: center;
     top: 0;
     bottom: 0;
-    left: 6%;
-    padding-top: 5%;
-    font-size: calc(16px + 19.5vw);
-    font-weight: bold;
-    font-weight: 600;
+    left: 16%;
+    padding-top: 8%;
     color: #fff;
     white-space: nowrap;
     line-height: 1;

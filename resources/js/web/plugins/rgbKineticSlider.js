@@ -1,4 +1,4 @@
-export function initKineticSlider() {
+export function initKineticSliderVoid() {
     const sliderEl = document.getElementById("kinetic-slider");
     if (!sliderEl) {
         // Slider element not present on the current page

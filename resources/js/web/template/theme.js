@@ -1918,7 +1918,7 @@ export default function initTemplate() {
         let tlPhParallax = gsap.timeline({
             scrollTrigger: {
                 trigger: "#page-header",
-                start: "top top",
+                start: "top 60%",
                 end: "bottom top",
                 scrub: true,
                 markers: false,
@@ -1962,9 +1962,9 @@ export default function initTemplate() {
             if ($(".ph-caption-subtitle").length) {
                 tlPhParallax.to(".ph-caption-subtitle", { y: -230 }, 0);
             }
-            if ($(".ph-caption-title").length) {
-                tlPhParallax.to(".ph-caption-title", { y: -180 }, 0);
-            }
+            // if ($(".ph-caption-title").length) {
+            //     tlPhParallax.to(".ph-caption-title", { y: -180 }, 0);
+            // }
             if ($(".ph-caption-description").length) {
                 tlPhParallax.to(".ph-caption-description", { y: -120 }, 0);
             }
@@ -1988,7 +1988,7 @@ export default function initTemplate() {
                         for (var i = 0; i < 3; i++) {
                             $phghText.clone().insertAfter($phghText);
                         }
-                        tlPhParallax.to($phGhost, { y: -60, xPercent: -8 }, 0);
+                        tlPhParallax.to($phGhost, { xPercent: -8 }, 0);
                     } else {
                         tlPhParallax.to($phGhost, { y: -30 }, 0);
                     }
