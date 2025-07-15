@@ -12,21 +12,20 @@
 
 <body id="body" class="tt-transition tt-boxed tt-smooth-scroll tt-magic-cursor">
     <main id="body-inner">
-        <div id="page-transition">
-            @include('web.layout.preloader')
-            @include('web.layout.cursor')
+        @include('web.layout.preloader')
+        @include('web.layout.cursor')
 
-            <div id="scroll-container">
-                @include('web.layout.header')
+        <div id="scroll-container">
+            @include('web.layout.header')
 
-                <div id="content-wrap">
+            <div id="content-wrap">
+                @include('web.layout.sliding-sidebar')
 
-                    <div id="swup">
-                        @yield('content')
-                    </div>
-
-                    @include('web.layout.footer')
+                <div id="swup">
+                    @yield('content')
                 </div>
+
+                @include('web.layout.footer')
             </div>
         </div>
     </main>

@@ -1,11 +1,10 @@
 import Swup from "swup";
 import SwupScriptsPlugin from "@swup/scripts-plugin";
 import {
-    startLoader,
-    transitOut,
-    transitIn,
-    hideLoader,
+    HideLoad,
+    RevealLoad,
 } from "../template/loader";
+import initTemplate from '../template/theme';
 import { initKineticSliderVoid } from "./rgbKineticSlider";
 let kineticSlider = null;
 const loadPixiFilters = () => {
@@ -56,23 +55,19 @@ const swup = new Swup({
 });
 
 // 1. 点击链接后、切换开始前
-swup.hooks.on("visit:start", () => {
-    // 清零并启动数字加载器
-    document.querySelector(".loader__count .count__text").textContent = "0";
-    // 播放出场动画
-    transitOut();
+swup.hooks.on("link:click", () => {
+    RevealLoad();
 });
 
 // 2. Swup 将新内容替换到 DOM 之后
 swup.hooks.on("content:replace", () => {
-    // 播放入场动画
-    startLoader();
-    transitIn();
 });
 
 // 3. 切换完成（浏览器历史、滚动位置都已就绪）
 swup.hooks.on("visit:end", () => {
+    setTimeout(() => {
+        HideLoad();
+    }, 1000);
     // 隐藏加载器并收尾
-    hideLoader();
     initKineticSlider();
 });

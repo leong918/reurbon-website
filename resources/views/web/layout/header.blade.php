@@ -46,7 +46,7 @@
         </div>
 
         <div class="flex-1 text-end pointer-events-auto magnetic-item">
-            <button class="btn-default px-5 hover-button hover-button--white tt-sliding-sidebar-trigger-custom " type="submit">
+            <button class="btn-default px-5 hover-button hover-button--white" type="button" data-sliding-sidebar-toggle>
                 <em></em>
                 <span>Get a Quotation <img class="arrow-icon" src="{{ asset('/images/header/white-arrow.svg') }}" alt="arrow"></span>
             </button>

@@ -1,5 +1,5 @@
 import $ from "jquery";
-import { startLoader, hideLoader, transitIn } from "./template/loader";
+import { HideLoad } from "./template/loader";
 import imagesLoaded from "imagesloaded";
 import { initKineticSliderVoid } from "./plugins/rgbKineticSlider";
 
@@ -9,11 +9,8 @@ const imgLoad = imagesLoaded(content);
 window.imagesLoaded = imagesLoaded; // Make it globally available
 
 $(function () {
-    // startLoader();
-    transitIn();
-
     imgLoad.on("done", (instance) => {
-        hideLoader();
+        HideLoad();
         initKineticSliderVoid();
     });
 });
