@@ -4,7 +4,6 @@ import {
     HideLoad,
     RevealLoad,
 } from "../template/loader";
-import initTemplate from '../template/theme';
 import { initKineticSliderVoid } from "./rgbKineticSlider";
 let kineticSlider = null;
 const loadPixiFilters = () => {
@@ -70,4 +69,16 @@ swup.hooks.on("visit:end", () => {
     }, 1000);
     // 隐藏加载器并收尾
     initKineticSlider();
+
+    // update body white-header class check route
+    const body = document.getElementById("body");
+    let excludedRoutes = [
+        "/about",
+    ];
+    if (excludedRoutes.includes(window.location.pathname)) {
+        body.classList.add("white-header");
+    } else {
+        body.classList.remove("white-header");
+    }
+    
 });

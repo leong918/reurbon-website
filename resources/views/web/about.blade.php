@@ -28,5 +28,9 @@
       </div>
     </div>
   </section>
+
+  <section class="h-[100vh]">
+
+  </section>
 </div>
 @endsection
