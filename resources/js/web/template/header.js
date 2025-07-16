@@ -2,9 +2,11 @@ import $ from "jquery";
 import gsap from "gsap";
 import Observer from "gsap/Observer";
 
+// Register GSAP plugin globally
+gsap.registerPlugin(Observer);
+
 export function initFloatingHeader() {
     const $header = $("#tt-header");
-    gsap.registerPlugin(Observer);
 
     let lastScrollTop = 0;
 
