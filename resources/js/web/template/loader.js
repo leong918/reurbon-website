@@ -6,6 +6,8 @@ import { StartBaseTransition } from "./transition";
 import { isMobile } from "./../utils";
 import initTemplate from "./theme";
 import { initFloatingHeader } from './header';
+import { swiperClientFeedback, swiperClients } from '../shared/swiper';
+import { initGlobo } from '../shared/globo';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -449,4 +451,7 @@ export function HideLoad() {
 
     initTemplate();
     initFloatingHeader();
+    swiperClients();
+    swiperClientFeedback();
+    initGlobo();
 }

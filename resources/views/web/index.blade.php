@@ -457,6 +457,60 @@
             </div>
         </div>
     </section>
+
+    <section class="pt-[120px] pb-[120px] relative overflow-hidden bg-[#110000]">
+        <div class="globo" id="globo"></div>
+        <div class="blur"></div>
+        <div class="@container container px-4 mx-auto z-10 relative">
+            <div class="mb-[110px]">
+                <div class="swiper swiper-clients swiper-continuous swiper-mask">
+                    <div class="swiper-wrapper">
+                        @php
+                            $clients = range(1, 16);
+                        @endphp
+                        @foreach($clients as $client)
+                            <div class="swiper-slide">
+                                <div class="max-w-[150px] mx-auto">
+                                    <img src="{{ asset('images/home/client.png') }}" alt="Client" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mb-[60px]">
+                <h6 class="text-[46px] leading-[46px] font-[500] text-white">What Our <span class="text-secondary">Client</span> Say</h6>
+            </div>
+            <div class=>
+                <div class="swiper swiper-client-feedback">
+                    <div class="swiper-wrapper">
+                        @php
+                            $feedbacks = range(1, 4); // Example feedbacks
+                        @endphp
+                        @foreach($feedbacks as $feedback)
+                        <div class="swiper-slide">
+                            <div class="client-feedback-item">
+                                <div class="flex items-center mb-4">
+                                   <div class="w-[80px] h-[80px] bg-gray-300 rounded-full mr-3"></div>
+                                   <div>
+                                      <p class="font-[500] text-theme text-[30px] leading-[34px]">Kiki</p>
+                                      <p class="font-[300] text-black text-[21px] leading-[30px] font-(family-name:--font-ogg-text-trial)">
+                                        @ Tiktok Studio
+                                        </p>
+                                   </div>
+                                </div>
+                                <p class="text-gray-800 text-[30px] font-[500] leading-[34px]">
+                                    Redesign with Reurbon was an easy process. Before this, our website had an outdated design, it was very hard for people to find the content. After Reurbon web redesign call support was reduced, and leads came pouring in.
+                                </p>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- ... -->
     <div class="tt-section padding-top-xlg-150 padding-bottom-xlg-150">
         <div class="tt-section-inner tt-wrap">
