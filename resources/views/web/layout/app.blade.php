@@ -22,6 +22,9 @@
                 @include('web.layout.sliding-sidebar')
 
                 <div id="swup">
+                    <div id="tt-header" class="tt-header-fixed">
+                        @include('web.component.header')
+                    </div>
                     @yield('content')
                 </div>
 

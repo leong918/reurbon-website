@@ -3,9 +3,10 @@
 @section('content')
 <div id="home">
     <section class="section-banner">
+
         <div class="h-[890px] overflow-hidden">
             <div id="kinetic-slider" class="kinetic-slider text-center">
-                <div class="@container container px-4 mx-auto pt-[148px] pb-13 flex z-10 h-full flex-col justify-between">
+                <div class="@container container mx-auto pt-[148px] pb-13 flex z-10 h-full flex-col justify-between">
                     <h1 class="text-[92px] text-light-white text-start leading-[0.8] font-[400] tracking-tight" data-gsap-fade="left" data-fade-amount="35" data-delay="1.9">A Brand-Tech <br>
                         Agency
                     </h1>
@@ -21,17 +22,17 @@
     </section>
 
     <section id="page-header" class="ph-ghost-scroll ph-image-cropped ph-content-parallax bg-light-grey py-[320px] pt-[170px]">
-        <div class="@container container px-4 mx-auto">
+        <div class="@container container mx-auto">
             <div class="ph-caption">
-                <h1 class="ph-caption-title">
+                <h1 class="ph-caption-title" data-gsap-fade="bottom" data-fade-amount="35">
                     <p class="text-[46px] mb-0 font-[500] text-theme leading-[1.2] tracking-tight lg:max-w-[80%]">
                         One stop service of creative brand-tech agency with branding design, IT software development and
                         marketing services. We drive B2B and SMEs to a new generation of creative and strategic.
                     </p>
                 </h1>
-                <div class="ph-caption-title-ghost">
+                <div class="ph-caption-title-ghost" data-gsap-fade="bottom" data-fade-amount="35">
                     <div
-                        class="ph-appear text-[260px] text-theme font-[500] font-(family-name:--font-anybody) tracking-wide">
+                        class="ph-appear text-[260px] text-theme font-anybody-expanded font-bold">
                         WE ARE REURBON
                     </div>
                 </div>
@@ -40,26 +41,30 @@
     </section>
 
     <section class="py-[150px] bg-red-mesh">
-        <div class="@container container px-4 mx-auto">
+        <div class="@container container mx-auto">
             <div class="text-white">
                 <div class="mx-auto space-y-10">
                     <!-- Header Section -->
                     <div data-gsap-fade="left" data-fade-amount="35">
                         <p
-                            class="text-[21px] leading-[27px] uppercase tracking-wide font-(family:--font-anybody-ultracondensed) text-light-white">
+                            class="text-[21px] leading-[27px] font-anybody-expanded font-[300] text-light-white">
                             Look Over! Why your business challenge today
                         </p>
-                        <h2 class="text-[46px] font-[500] leading-[1.4]">
+                        <h2 class="text-[46px] font-[500] leading-[1] mt-8">
                             Most creative & marketing <br />agency are
-                            <span class="italic font-light">failing you behind.</span>
+                            <span class="font-(family-name:--font-ogg-text-trial) font-[300] font-italic">failing you behind.</span>
                         </h2>
+                        <p
+                            class="text-[21px] leading-[27px] font-anybody-expanded font-[300] text-light-white mt-20">
+                            Here’s why the problems fail to deliver results
+                        </p>
                     </div>
 
                     <!-- Problem Grid -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-10">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pt-5">
                         <!-- Item 1 -->
-                        <div data-gsap-fade="bottom" data-fade-amount="35">
-                            <div class="mb-[36px]">
+                        <div data-gsap-fade="bottom" data-fade-amount="35" class="grid">
+                            <div class="mb-[36px] min-h-[95px]">
                                 <!-- Placeholder icon -->
                                 <img src="{{ asset('/images/home/lack-marketing-strategy.svg') }}"
                                     alt="Lack of Marketing Strategy" class="w-[86px] h-[86px] object-cover" />
@@ -74,8 +79,8 @@
                         </div>
 
                         <!-- Item 2 -->
-                        <div data-gsap-fade="bottom" data-fade-amount="35" data-delay="0.3">
-                            <div class="mb-[36px]">
+                        <div data-gsap-fade="bottom" data-fade-amount="35" data-delay="0.3" class="grid">
+                            <div class="mb-[36px] min-h-[95px]">
                                 <!-- Placeholder icon -->
                                 <img src="{{ asset('/images/home/poorly-brand-identity.svg') }}"
                                     alt="Poorly Brand Identity" class="w-[86px] h-[86px] object-cover" />
@@ -89,8 +94,8 @@
                         </div>
 
                         <!-- Item 3 -->
-                        <div data-gsap-fade="bottom" data-fade-amount="35" data-delay="0.6">
-                            <div class="mb-[36px]">
+                        <div data-gsap-fade="bottom" data-fade-amount="35" data-delay="0.6" class="grid">
+                            <div class="mb-[36px] min-h-[95px]">
                                 <!-- Placeholder icon -->
                                 <img src="{{ asset('/images/home/disconnect-digital-systems.svg') }}"
                                     alt="Disconnected Digital Systems" class="w-[86px] h-[86px] object-cover" />
@@ -110,7 +115,7 @@
     </section>
 
     <section class="pt-[175px] pb-[85px] bg-light-grey">
-        <div class="@container md:container px-4 mx-auto">
+        <div class="@container md:container mx-auto">
             <div class="flex flex-wrap gap-x-[46px] gap-y-[20px] items-stretch justify-center">
                 <!-- Left image and text -->
                 <div class="lg:flex-[0_0_30%] flex flex-col h-full">
@@ -212,7 +217,7 @@
 
     <section class="py-[90px] bg-light-grey">
         <div
-            class="@container container px-4 mx-auto flex flex-col lg:flex-row gap-10 justify-center">
+            class="@container container mx-auto flex flex-col lg:flex-row gap-10 justify-center">
 
             <!-- Image First on Mobile -->
             <div class="order-1 lg:order-2 w-full flex-[0_0_45%]">
@@ -242,7 +247,7 @@
     </section>
 
     <section class="py-[90px] bg-light-grey">
-        <div class="@container container px-4 mx-auto flex flex-col lg:flex-row gap-10">
+        <div class="@container container mx-auto flex flex-col lg:flex-row gap-10">
 
             <!-- Left: Heading + Description -->
             <div class="order-2 lg:order-1 w-full lg:w-1/2 space-y-4 text-center lg:text-left">
@@ -313,6 +318,8 @@
             </div>
         </div>
     </section>
+
+
 
     <section class="bg-light-grey py-[90px]">
         <div class="tt-section-inner">
