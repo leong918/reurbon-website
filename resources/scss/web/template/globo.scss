@@ -21,6 +21,7 @@
   bottom: 0;
   position: absolute;
   z-index: 2;
+  -webkit-backdrop-filter: blur(5vmax);
   backdrop-filter: blur(5vmax);
 }
 
