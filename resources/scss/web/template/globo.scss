@@ -1,0 +1,39 @@
+.globo {
+  background-color: #110000;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  border-radius: 50%;
+  background: linear-gradient(to right, #3A0700, #3A0700 20%, #3A0700 80%, #3A0700);
+  animation: rotate 15s infinite;
+  opacity: 0.8;
+}
+
+.blur {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 2;
+  backdrop-filter: blur(5vmax);
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1 1.5;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
