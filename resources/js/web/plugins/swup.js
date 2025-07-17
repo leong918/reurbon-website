@@ -45,6 +45,7 @@ const initKineticSlider = async () => {
     }
 };
 const swup = new Swup({
+    animateHistoryBrowsing: true,
     plugins: [
         new SwupScriptsPlugin({
             // Allows scripts to run during page transitions
@@ -54,7 +55,11 @@ const swup = new Swup({
 });
 
 // 1. 点击链接后、切换开始前
-swup.hooks.on("link:click", () => {
+swup.hooks.on("link:click", (swup) => {
+    // Prevent action if the clicked link is the same as the current page
+    if(swup.from.url === swup.to.url) {
+        return;
+    }
     RevealLoad();
 });
 
