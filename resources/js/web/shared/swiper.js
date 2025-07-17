@@ -53,6 +53,17 @@ export const swiperClientFeedback = () => {
 		slidesPerView: 3,
 		spaceBetween: 38,
 		loop: true,
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+			},
+			480: {
+				slidesPerView: 2,
+			},
+			768: {
+				slidesPerView: 3,
+			},
+		},
 		autoplay: {
 			delay: 5000,
 			disableOnInteraction: false,
