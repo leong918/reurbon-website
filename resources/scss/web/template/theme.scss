@@ -8409,20 +8409,20 @@ body.tt-boxed .tt-wrap .tt-pagination {
  * Sliding sidebar
 /* ------------------------------------------------------------- */
 
-@media (max-width: 1400px) and (min-width: 769px) {
-    body:not(.is-mobile).tt-sliding-sidebar-left-on #content-wrap {
-        padding-left: 40px;
-    }
-    body:not(.is-mobile).tt-sliding-sidebar-right-on #content-wrap {
-        padding-right: 40px;
-    }
-    body:not(.is-mobile).tt-sliding-sidebar-left-on .tt-header-inner {
-        padding-left: 50px;
-    }
-    body:not(.is-mobile).tt-sliding-sidebar-right-on .tt-header-inner {
-        padding-right: 50px;
-    }
-}
+// @media (max-width: 1400px) and (min-width: 769px) {
+//     body:not(.is-mobile).tt-sliding-sidebar-left-on #content-wrap {
+//         padding-left: 40px;
+//     }
+//     body:not(.is-mobile).tt-sliding-sidebar-right-on #content-wrap {
+//         padding-right: 40px;
+//     }
+//     body:not(.is-mobile).tt-sliding-sidebar-left-on .tt-header-inner {
+//         padding-left: 50px;
+//     }
+//     body:not(.is-mobile).tt-sliding-sidebar-right-on .tt-header-inner {
+//         padding-right: 50px;
+//     }
+// }
 
 /* Sliding sidebar */
 .tt-sliding-sidebar-wrap {
