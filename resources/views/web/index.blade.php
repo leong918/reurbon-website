@@ -314,8 +314,6 @@
         </div>
     </section>
 
-
-
     <section class="bg-light-grey py-[90px]">
         <div class="tt-section-inner">
             <div id="portfolio-grid" class="pgi-hover">
