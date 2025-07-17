@@ -24,8 +24,6 @@ export const initGlobo = () => {
   }
 
   window.onpointermove = (event) => {
-    event.preventDefault();
-    event.stopPropagation();
     const { clientX, clientY } = event;
 
     globo.animate(
