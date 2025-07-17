@@ -1,5 +1,3 @@
-import $ from "jquery";
-
 export const initGlobo = () => {
   const globo = document.getElementById("globo");
 
