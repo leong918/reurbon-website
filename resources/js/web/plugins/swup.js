@@ -57,9 +57,7 @@ const swup = new Swup({
 // 1. 点击链接后、切换开始前
 swup.hooks.on("link:click", (swup) => {
     // Prevent action if the clicked link is the same as the current page
-    console.log('Link clicked:', swup);
     if(swup.from.url === swup.to.url) {
-        console.log('Same page link clicked, preventing transition.');
         return;
     }
     RevealLoad();
