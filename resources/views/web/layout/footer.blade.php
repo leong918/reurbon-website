@@ -1,4 +1,4 @@
-<footer id="tt-footer" class="bg-[#ebebeb] py-10 md:py-[90px]!">
+<footer id="tt-footer" class="bg-[#ebebeb] py-10 !md:py-[90px]">
     <div class="tt-footer-inner">
         <div class="@container container mx-auto flex flex-col md:flex-row justify-between items-start gap-10 md:gap-[50px]">
             <div class="footer-col w-full md:w-1/2">
