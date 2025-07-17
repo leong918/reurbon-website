@@ -5,6 +5,7 @@ import {
     RevealLoad,
 } from "../template/loader";
 import { initKineticSliderVoid } from "./rgbKineticSlider";
+import gsap from "gsap";
 let kineticSlider = null;
 const loadPixiFilters = () => {
     return new Promise((resolve) => {
@@ -61,6 +62,20 @@ swup.hooks.on("link:click", (swup) => {
         return;
     }
     RevealLoad();
+});
+
+swup.hooks.on('visit:start', async () => {
+  // Introduce a delay (e.g., 1 second) to ensure that any ongoing animations or asynchronous operations 
+  // are completed before proceeding with the next steps in the page transition.
+  await new Promise(resolve => setTimeout(resolve, 1000));
+});
+
+swup.hooks.replace('animation:out:await', async () => {
+  await gsap.to('.transition-fade', { opacity: 0, duration: 0.25 });
+});
+
+swup.hooks.replace('animation:in:await', async () => {
+  await gsap.fromTo('.transition-fade', { opacity: 0 }, { opacity: 1, duration: 0.25 });
 });
 
 // 2. Swup 将新内容替换到 DOM 之后
