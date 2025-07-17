@@ -65,7 +65,8 @@ swup.hooks.on("link:click", (swup) => {
 });
 
 swup.hooks.on('visit:start', async () => {
-  // Introduce a delay (e.g., 1 second)
+  // Introduce a delay (e.g., 1 second) to ensure that any ongoing animations or asynchronous operations 
+  // are completed before proceeding with the next steps in the page transition.
   await new Promise(resolve => setTimeout(resolve, 1000));
 });
 
