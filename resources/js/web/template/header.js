@@ -8,7 +8,7 @@ export function initFloatingHeader() {
     const $header = $("#tt-header");
     const $header_btn = $(".header-btn");
     const body = document.getElementById("body");
-
+    let excludedRoutes = ["/about"];
     let isFixed = false;
 
     Observer.create({

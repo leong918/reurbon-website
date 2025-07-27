@@ -12,5 +12,6 @@ $(function () {
     imgLoad.on("done", (instance) => {
         HideLoad();
         initKineticSliderVoid();
+        initMagicCursor();
     });
 });
