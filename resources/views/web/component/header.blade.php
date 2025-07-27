@@ -12,7 +12,7 @@
     <!-- End logo -->
   </div> <!-- /.tt-header-col -->
 
-  <div class="flex-3">
+  <div class="flex-3 middle">
     <nav class="pointer-events-auto">
       <ul class="flex flex-row justify-center items-center list-none gap-[50px]">
         <li>
@@ -44,11 +44,15 @@
     </nav>
   </div>
 
-  <div class="flex-1 text-end pointer-events-auto magnetic-item">
-    <button class="btn-default px-6 hover-button hover-button--white" type="button" data-sliding-sidebar-toggle>
+  <div class="flex-1 text-end pointer-events-auto magnetic-item end">
+    <button class="btn-default px-6 hover-button hover-button--white header-btn" type="button" data-sliding-sidebar-toggle>
       <em></em>
       <span class="font-[500]">Get a Quotation <img class="arrow-icon" src="{{ asset('/images/header/white-arrow.svg') }}" alt="arrow"></span>
     </button>
+  </div>
+  <div class="flex-1 cursor-pointer magnetic-item lg:hidden tt-ol-menu-toggle-btn-custom">
+    <img class="float-end" src="{{ asset('/images/header/menu.png') }}"
+      alt="Menu">
   </div>
 
 </div> <!-- /.header-inner -->

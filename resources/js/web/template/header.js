@@ -6,6 +6,9 @@ gsap.registerPlugin(Observer);
 
 export function initFloatingHeader() {
     const $header = $("#tt-header");
+    const $header_btn = $(".header-btn");
+    const body = document.getElementById("body");
+
     let isFixed = false;
 
     Observer.create({
@@ -17,6 +20,9 @@ export function initFloatingHeader() {
             if (scrollY > 50 && !isFixed) {
                 isFixed = true;
                 $header.removeClass("hidden");
+                $header_btn.removeClass("hover-button--white");
+                $header_btn.addClass("hover-button--red");
+                body.classList.add("white-header");
                 $header.addClass("backdrop-header");
                 gsap.fromTo(
                     $header,
@@ -27,6 +33,10 @@ export function initFloatingHeader() {
 
             if (scrollY < 50 && isFixed) {
                 isFixed = false;
+
+                $header_btn.addClass("hover-button--white");
+                $header_btn.removeClass("hover-button--red");
+                body.classList.remove("white-header");
                 $header.removeClass("backdrop-header");
                 gsap.to($header, {
                     y: 0,

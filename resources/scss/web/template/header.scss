@@ -1,48 +1,29 @@
 #tt-header {
-  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
-  &.backdrop-header {
-    backdrop-filter: blur(50px);
-    background: #ebebeb73;
-    color: #000;
-
-    button {
-      border-color: #000;
-      span {
+    &.backdrop-header {
+        backdrop-filter: blur(50px);
+        background: #ebebeb73;
         color: #000;
-      }
-
-      .arrow-icon {
-        filter: invert(1);
-      }
     }
-  }
 
-  // if others page need change the font color
+    // if others page need change the font color
 }
 
 body.white-header {
-  #tt-header {
-    color: #000 !important;
-
-    .tt-logo {
-      .tt-logo-light {
-        display: none !important;
-      }
-      .tt-logo-dark {
-        display: block !important;
-      }
-    }
-
-    button {
-      border-color: #000 !important;
-      span {
+    #tt-header {
         color: #000 !important;
-      }
 
-      .arrow-icon {
-        filter: invert(1) !important;
-      }
+        .tt-ol-menu-toggle-btn-custom {
+            filter: invert(100%);
+        }
+        .tt-logo {
+            .tt-logo-light {
+                display: none !important;
+            }
+            .tt-logo-dark {
+                display: block !important;
+            }
+        }
     }
-  }
 }

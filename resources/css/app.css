@@ -15,11 +15,19 @@
     width: 100%;
     padding-left: 50px;
     padding-right: 50px;
+    @media (width >= 0px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
     @media (width >= 480px) {
         max-width: 640px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     @media (width >= 640px) {
         max-width: 768px;
+        padding-left: 40px;
+        padding-right: 40px;
     }
     @media (width >= 768px) {
         max-width: 1024px;
@@ -31,9 +39,9 @@
         max-width: 1536px;
     }
     @media (width >= 1536px) {
-        max-width: 1536px;
+        max-width: 1606px;
     }
     @media (width >= 1720px) {
-        max-width: 1720px;
+        max-width: 1820px;
     }
 }

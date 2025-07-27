@@ -10,7 +10,7 @@ export function initGsapFade() {
     const $elements = $("[data-gsap-fade]");
     $elements.each(function () {
         const $el = $(this);
-        const type = $el.data("gsap-fade");
+        let type = $el.data("gsap-fade");
         const fromVars = { autoAlpha: 0 };
 
         const defaultAmount = 50;
@@ -24,6 +24,7 @@ export function initGsapFade() {
             if ($el.is("[data-fade-amount-mobile]")) {
                 amount = parseFloat($el.data("fade-amount-mobile"));
             }
+            type = "bottom";
         } else if ($el.is("[data-fade-amount-desktop]")) {
             amount = parseFloat($el.data("fade-amount-desktop"));
         }
@@ -58,7 +59,7 @@ export function initGsapFade() {
             scrollTrigger: {
                 trigger: $el[0],
                 start: start,
-                toggleActions: "play none none reverse",
+                toggleActions: "play none none none",
             },
         });
     });

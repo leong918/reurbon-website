@@ -2,12 +2,25 @@
 // @import 'bootstrap/scss/bootstrap';
 
 .swiper-continuous {
-  .swiper-wrapper {
-    transition-timing-function: linear;
-  }
+    .swiper-wrapper {
+        transition-timing-function: linear;
+        align-items: center;
+    }
 }
 
 .swiper-mask {
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+    mask: linear-gradient(
+        90deg,
+        transparent,
+        white 20%,
+        white 80%,
+        transparent
+    );
+    -webkit-mask: linear-gradient(
+        90deg,
+        transparent,
+        white 20%,
+        white 80%,
+        transparent
+    );
 }

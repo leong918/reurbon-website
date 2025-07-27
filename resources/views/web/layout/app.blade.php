@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Reurbon</title>
-
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset("favicon/favicon.svg") }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset("favicon/favicon.svg") }}">
     @vite(['resources/css/app.css', 'resources/js/web/app.js', 'resources/scss/web/app.scss'])
 </head>
 
