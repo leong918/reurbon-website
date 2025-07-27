@@ -2,33 +2,51 @@ import $ from "jquery";
 import gsap from "gsap";
 import Observer from "gsap/Observer";
 
-// Register GSAP plugin globally
 gsap.registerPlugin(Observer);
 
 export function initFloatingHeader() {
     const $header = $("#tt-header");
+    const $header_btn = $(".header-btn");
+    const body = document.getElementById("body");
 
-    let lastScrollTop = 0;
+    let isFixed = false;
 
     Observer.create({
         target: window,
-        type: "scroll, wheel, touch",
-        tolerance: 10,
+        type: "scroll,wheel,touch",
         onChangeY: (self) => {
-            // add class backdrop-header when scrolling down
-            if (self.scrollY() > lastScrollTop) {
-                $header.addClass("backdrop-header");
-                $header.find(".tt-logo-light").hide();
-                $header.find(".tt-logo-dark").show();
-            }
-            lastScrollTop = self.scrollY();
+            const scrollY = self.scrollY();
 
-            // remove class backdrop-header when scroll at the top
-            if (lastScrollTop < 100) {
-                $header.removeClass("backdrop-header");
-                $header.find(".tt-logo-light").show();
-                $header.find(".tt-logo-dark").hide();
+            if (scrollY > 50 && !isFixed) {
+                isFixed = true;
+                $header.removeClass("hidden");
+                $header_btn.removeClass("hover-button--white");
+                $header_btn.addClass("hover-button--red");
+                body.classList.add("white-header");
+                $header.addClass("backdrop-header");
+                gsap.fromTo(
+                    $header,
+                    { y: -100, autoAlpha: 0 },
+                    { y: 0, autoAlpha: 1, duration: 0.4, ease: "power2.out" }
+                );
             }
-        }
+
+            if (scrollY < 50 && isFixed) {
+                isFixed = false;
+
+                $header_btn.addClass("hover-button--white");
+                $header_btn.removeClass("hover-button--red");
+                body.classList.remove("white-header");
+                $header.removeClass("backdrop-header");
+                gsap.to($header, {
+                    y: 0,
+                    autoAlpha: 1,
+                    duration: 0.2,
+                    onComplete: () => {
+                        $header.addClass("hidden");
+                    },
+                });
+            }
+        },
     });
 }

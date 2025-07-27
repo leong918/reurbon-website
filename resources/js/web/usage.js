@@ -2,7 +2,7 @@ import $ from "jquery";
 import { HideLoad } from "./template/loader";
 import imagesLoaded from "imagesloaded";
 import { initKineticSliderVoid } from "./plugins/rgbKineticSlider";
-
+import { initMagicCursor } from "./plugins/magicCursor";
 const content = document.querySelector("body");
 const imgLoad = imagesLoaded(content);
 

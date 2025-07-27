@@ -1,13 +1,47 @@
 @import "tailwindcss";
 
 @theme {
-  --breakpoint-3xl: 1720px;
-  --breakpoint-2xl: 1536px;
-  --breakpoint-xl: 1280px;
-  --breakpoint-lg: 1024px;
-  --breakpoint-md: 768px;
-  --breakpoint-sm: 640px;
-  --breakpoint-xs: 480px;
-  /* --breakpoint-3xl: 1920px;
+    --breakpoint-3xl: 1720px;
+    --breakpoint-2xl: 1536px;
+    --breakpoint-xl: 1280px;
+    --breakpoint-lg: 1024px;
+    --breakpoint-md: 768px;
+    --breakpoint-sm: 640px;
+    --breakpoint-xs: 480px;
+    /* --breakpoint-3xl: 1920px;
   --breakpoint-4xl: 2560px; */
+}
+.container {
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    @media (width >= 0px) {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    @media (width >= 480px) {
+        max-width: 640px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @media (width >= 640px) {
+        max-width: 768px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    @media (width >= 768px) {
+        max-width: 1024px;
+    }
+    @media (width >= 1024px) {
+        max-width: 1280px;
+    }
+    @media (width >= 1280px) {
+        max-width: 1536px;
+    }
+    @media (width >= 1536px) {
+        max-width: 1606px;
+    }
+    @media (width >= 1720px) {
+        max-width: 1820px;
+    }
 }
