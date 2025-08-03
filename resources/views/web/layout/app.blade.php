@@ -14,7 +14,6 @@
 <body id="body" class="tt-transition tt-boxed tt-smooth-scroll tt-magic-cursor @if(!Route::is('web.home')) white-header @endif">
     <main id="body-inner">
         @include('web.layout.preloader')
-        @include('web.layout.cursor')
 
         <div id="scroll-container">
             @include('web.layout.header')
@@ -23,6 +22,7 @@
                 @include('web.layout.sliding-sidebar')
 
                 <div id="swup">
+                    @include('web.layout.cursor')
                     <div id="tt-header" class="tt-header-fixed">
                         @include('web.component.header')
                     </div>
