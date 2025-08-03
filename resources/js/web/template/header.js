@@ -19,10 +19,10 @@ export function initFloatingHeader() {
 
             if (scrollY > 50 && !isFixed) {
                 isFixed = true;
-                $header.removeClass("hidden");
+                // $header.removeClass("hidden");
                 $header_btn.removeClass("hover-button--white");
                 $header_btn.addClass("hover-button--red");
-                body.classList.add("white-header");
+                // body.classList.add("white-header");
                 $header.addClass("backdrop-header");
                 gsap.fromTo(
                     $header,
@@ -36,14 +36,14 @@ export function initFloatingHeader() {
 
                 $header_btn.addClass("hover-button--white");
                 $header_btn.removeClass("hover-button--red");
-                body.classList.remove("white-header");
+                // body.classList.remove("white-header");
                 $header.removeClass("backdrop-header");
                 gsap.to($header, {
                     y: 0,
                     autoAlpha: 1,
                     duration: 0.2,
                     onComplete: () => {
-                        $header.addClass("hidden");
+                        // $header.addClass("hidden");
                     },
                 });
             }
