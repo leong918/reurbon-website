@@ -12,10 +12,8 @@
 
 body.white-header {
     #tt-header {
-        color: #000 !important;
-
-        .tt-ol-menu-toggle-btn-custom {
-            filter: invert(100%);
+        li a {
+            color: #000 !important;
         }
         .tt-logo {
             .tt-logo-light {
