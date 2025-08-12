@@ -10,6 +10,14 @@ export function initFloatingHeader() {
     const body = document.getElementById("body");
     let excludedRoutes = ["/about"];
     let isFixed = false;
+    const isDifHead = excludedRoutes.includes(window.location.pathname);
+    if (isDifHead) {
+        body.classList.add("white-header");
+        $header_btn.removeClass("hover-button--white");
+        $header_btn.addClass("hover-button--black");
+    } else {
+        body.classList.remove("white-header");
+    }
 
     Observer.create({
         target: window,
@@ -19,6 +27,7 @@ export function initFloatingHeader() {
 
             if (scrollY > 50 && !isFixed) {
                 isFixed = true;
+                console.log(123);
                 $header.removeClass("hidden");
                 $header_btn.removeClass("hover-button--white");
                 $header_btn.addClass("hover-button--red");
@@ -30,7 +39,6 @@ export function initFloatingHeader() {
                     { y: 0, autoAlpha: 1, duration: 0.4, ease: "power2.out" }
                 );
             }
-
             if (scrollY < 50 && isFixed) {
                 isFixed = false;
 

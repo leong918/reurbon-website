@@ -11,7 +11,7 @@
     @vite(['resources/css/app.css', 'resources/js/web/app.js', 'resources/scss/web/app.scss'])
 </head>
 
-<body id="body" class="tt-transition tt-boxed tt-smooth-scroll tt-magic-cursor @if(!Route::is('web.home')) white-header @endif">
+<body id="body" class="tt-transition tt-boxed tt-smooth-scroll tt-magic-cursor">
     <main id="body-inner">
         @include('web.layout.preloader')
         @include('web.layout.cursor')
