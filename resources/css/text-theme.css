@@ -1,0 +1,38 @@
+@theme:{
+    --font-ogo: '"Ogg Text TRIAL"', 'serif';
+}
+
+
+.banner-title{
+    @apply text-[40px] xs:text-[62px] xl:text-[92px] text-start leading-[90%] xs:leading-[95%] xl:leading-[85%] font-[400] tracking-tight;
+}
+.banner-red-title{
+    @apply text-red-600
+}
+
+.banner-leading{
+    @apply text-[17px] xl:text-[22px] hidden md:block;
+    color: #fdfdfd;
+}
+
+.section-header{
+    @apply text-[36px] xl:text-[46px] font-[500] leading-[37px] xl:leading-[46px];
+    @media (max-width: 467px) {
+        font-size: calc(19px + 1.5vw);
+    }
+}
+
+.section-subheader{
+    @apply text-[23px] xl:text-[30px] leading-[27px] xl:leading-[34px] font-[500];
+    @media (max-width: 467px) {
+        font-size: calc(15px + 1.5vw);
+    }
+}
+
+.section-content{
+    @apply text-[16px] xl:text-[21px] leading-[27px]  font-[300];
+    font-family: var(--font-anybody-expanded);
+    @media (max-width: 467px) {
+        font-size: calc(12px + 1.5vw);
+    }
+}

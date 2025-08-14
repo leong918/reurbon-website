@@ -1,0 +1,23 @@
+.banner-section {
+    @apply  pt-[86px] xs:pt-[108px] xl:pt-[148px] pb-6 xs:pb-13 flex z-10 h-full;
+}
+
+.section-container {
+    @apply bg-[#ebebeb] text-black py-[50px] xl:py-[150px];
+}
+
+.flex-item-list-container {
+    @apply flex flex-row gap-[10px] md:gap-[30px] xl:gap-[75px];
+}
+
+.grid-item-list-container {
+    @apply grid grid-cols-1 gap-[20px];
+
+    .grid-item-first-row{
+        @apply grid md:col-span-6 col-span-12;
+    }
+
+    .grid-item-row{
+        @apply grid xl:col-span-4  md:col-span-6 col-span-12;
+    }
+}
