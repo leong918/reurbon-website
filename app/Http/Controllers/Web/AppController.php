@@ -15,4 +15,9 @@ class AppController extends BaseController
     {
         return $this->view('about');
     }
+    
+    public function portfolio()
+    {
+        return $this->view('portfolio');
+    }
 }
