@@ -17,22 +17,13 @@
 
 .section-header{
     @apply text-[36px] xl:text-[46px] font-[500] leading-[37px] xl:leading-[46px];
-    @media (max-width: 467px) {
-        font-size: calc(19px + 1.5vw);
-    }
 }
 
 .section-subheader{
-    @apply text-[23px] xl:text-[30px] leading-[27px] xl:leading-[34px] font-[500];
-    @media (max-width: 467px) {
-        font-size: calc(15px + 1.5vw);
-    }
+    @apply text-[15px] md:text-[19px] lg:text-[23px] xl:text-[30px] leading-[27px] xl:leading-[34px] font-[500];
 }
 
 .section-content{
-    @apply text-[16px] xl:text-[21px] leading-[27px]  font-[300];
+    @apply text-[12px] md:text-[14px] lg:text-[17px] xl:text-[21px] leading-[27px]  font-[300];
     font-family: var(--font-anybody-expanded);
-    @media (max-width: 467px) {
-        font-size: calc(12px + 1.5vw);
-    }
 }

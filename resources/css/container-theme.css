@@ -3,11 +3,11 @@
 }
 
 .section-container {
-    @apply bg-[#ebebeb] text-black py-[50px] xl:py-[150px];
+    @apply bg-[#ebebeb] text-black py-[20px] xl:py-[120px];
 }
 
 .flex-item-list-container {
-    @apply flex flex-row gap-[10px] md:gap-[30px] xl:gap-[75px];
+    @apply flex flex-row gap-[20px] sm:gap-[20px] md:gap-[30px] lg:gap-[40px] xl:gap-[75px];
 }
 
 .grid-item-list-container {
