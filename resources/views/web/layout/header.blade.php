@@ -9,11 +9,11 @@
 
                     <ul class="tt-ol-menu-list">
 
-                        <li><a href="landing-page.html">Home</a></li>
-                        <li><a href="landing-page.html">About Us</a></li>
-                        <li><a href="landing-page.html">Portfolio</a></li>
-                        <li><a href="landing-page.html">Blogs</a></li>
-                        <li><a href="landing-page.html">Contact Us</a></li>
+                        <li><a href="{{ route('web.home') }}">Home</a></li>
+                        <li><a href="{{ route('web.about') }}">About Us</a></li>
+                        <li><a href="{{ route('web.portfolio') }}">Portfolio</a></li>
+                        <li><a href="{{ route('web.blogs') }}">Blogs</a></li>
+                        <li><a href="{{ route('web.contact') }}">Contact Us</a></li>
 
                     </ul>
                     <ul class="tt-ol-menu-social">

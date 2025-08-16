@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+/* import css to use @apply */
+@import "./text-theme.css";
+@import "./container-theme.css";
+
 @theme {
     --breakpoint-3xl: 1720px;
     --breakpoint-2xl: 1536px;
@@ -11,6 +15,7 @@
     /* --breakpoint-3xl: 1920px;
   --breakpoint-4xl: 2560px; */
 }
+
 .container {
     width: 100%;
     padding-left: 50px;
