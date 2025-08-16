@@ -4,6 +4,8 @@ import Observer from "gsap/Observer";
 
 gsap.registerPlugin(Observer);
 
+export const nav_header = $("#tt-header")
+
 export function initFloatingHeader() {
     const $header = $("#tt-header");
     const $header_btn = $(".header-btn");

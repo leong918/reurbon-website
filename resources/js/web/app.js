@@ -7,3 +7,6 @@ import "./plugins/swup";
 import "./template/scrollbar";
 
 import "./usage";
+
+// all custom js for page
+import "./page";

@@ -5,9 +5,10 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { StartBaseTransition } from "./transition";
 import { isMobile } from "./../utils";
 import initTemplate from "./theme";
-import { initFloatingHeader } from './header';
-import { swiperClientFeedback, swiperClients } from '../shared/swiper';
-import { initGlobo } from '../shared/globo';
+import { initFloatingHeader } from "./header";
+import { swiperClientFeedback, swiperClients } from "../shared/swiper";
+import { initGlobo } from "../shared/globo";
+import { initialPageFunction } from "../page";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -454,4 +455,5 @@ export function HideLoad() {
     swiperClients();
     swiperClientFeedback();
     initGlobo();
+    initialPageFunction();
 }
