@@ -1,6 +1,6 @@
 //All custom js for page
 import $ from "jquery";
-import { scrollFollow } from "./template/theme";
+import { scrollFollow } from "./utils";
 
 function scrollFollowPortfolio() {
     scrollFollow({
