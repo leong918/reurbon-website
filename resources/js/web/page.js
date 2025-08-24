@@ -1,20 +1,23 @@
 //All custom js for page
 import $ from "jquery";
-import { scrollFollow } from "./utils";
+import { scrollFollow, dropdownSelector, mouseMoveParallax, animateScrollAnimation } from "./utils";
 
 function scrollFollowPortfolio() {
-    scrollFollow({
-        scrollTriggerId: "portfolioScroll",
-        containerId: "portfolio-container",
-        wrapperId: "portfolio-category-wrapper",
-        minWidth: 600,
-        maxWidth: 768,
-    });
+    if ($("#portfolio-category-wrapper").length) {
+        scrollFollow({
+            scrollTriggerId: "portfolioScroll",
+            containerId: "portfolio-container",
+            wrapperId: "portfolio-category-wrapper",
+            minWidth: 600,
+            maxWidth: 768,
+        });
+    }
 }
+
 
 // Need to initial in swup in order to render again because it change element instead of render the whole dom
 export function initialPageFunction() {
-    scrollFollowPortfolio()
+    scrollFollowPortfolio();
     //portfolio grid item
     $("#portfolio-filter-container .item").on("click", function () {
         $("#portfolio-filter-container .item").removeClass("active");
@@ -44,4 +47,9 @@ export function initialPageFunction() {
         });
         scrollFollowPortfolio();
     });
+
+    //dropdown element
+    dropdownSelector();
+    mouseMoveParallax();
+    animateScrollAnimation();
 }

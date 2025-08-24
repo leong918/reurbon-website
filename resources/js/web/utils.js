@@ -1,4 +1,7 @@
 import $ from "jquery";
+import { nav_header } from "./template/header";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export function isMobile() {
     // ==============================================
@@ -76,7 +79,11 @@ export function scrollFollow({
             end: `bottom+=${nav_header.outerHeight()} bottom`,
             onUpdate: (self) => {
                 velocity = self.getVelocity();
-                position = calculatePosition(position, container_height, velocity);
+                position = calculatePosition(
+                    position,
+                    container_height,
+                    velocity
+                );
                 let clampY = gsap.utils.clamp(0, container_height, position);
 
                 // Instead of gsap.to every frame:
@@ -94,4 +101,133 @@ export function scrollFollow({
     } else {
         yTo(0);
     }
+}
+
+function growHeight(content, expanded, arrow, rotateDeg = "+=180") {
+    if (!expanded) {
+        gsap.to(content, {
+            height: "auto", // animate to real height
+            opacity: 1,
+            duration: 0.5,
+            ease: "power2.out",
+        });
+        gsap.to(arrow, {
+            opacity: 1,
+            duration: 0.3,
+            ease: "power2.out",
+        });
+    } else {
+        gsap.to(content, {
+            height: 0,
+            opacity: 0,
+            duration: 0.4,
+            ease: "power2.in",
+        });
+        gsap.to(arrow, {
+            opacity: 0.6,
+            duration: 0.3,
+            ease: "power2.out",
+        });
+    }
+    gsap.to(arrow, {
+        rotate: rotateDeg ? rotateDeg : "+=180",
+        duration: 0.3,
+        ease: "power2.out",
+    });
+}
+
+export function dropdownSelector() {
+    const wrappers = $("[data-dropdown-wrapper]");
+    if (wrappers) {
+        wrappers.each(function () {
+            const wrapper = $(this);
+            const header = wrapper.find("[data-dropdown-header]");
+            const child = wrapper.find("[data-dropdown-child]");
+            const arrow = wrapper.find("[data-dropdown-toggle]");
+
+            let expanded = false;
+            header.addClass("cursor-pointer");
+            gsap.set(child, { height: 0, opacity: 0, overflow: "hidden" });
+
+            header.on("click", () => {
+                let rotate = arrow.data("rotate");
+                if (expanded && rotate) {
+                    rotate = `-=${rotate}`;
+                }
+                if (!expanded && rotate) {
+                    rotate = `+=${rotate}`;
+                }
+                if (!rotate) {
+                    rotate = null;
+                }
+                growHeight(child, expanded, arrow, rotate);
+                expanded = !expanded;
+            });
+        });
+    }
+}
+
+export function mouseMoveParallax() {
+    // Add event listener
+    const container = $("#parallax-container");
+    const card = $("#parallax-image");
+
+    if (container && card) {
+        let width = container.innerWidth();
+        let height = container.innerHeight();
+
+        container.on("mousemove", (e) => {
+            const rect = container[0].getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            moved(x, y);
+        });
+        container.on("mouseleave", ended);
+        container.on("touchmove", (e) => {
+            moved(e.touches[0].clientX, e.touches[0].clientY);
+        });
+        container.on("touchend", ended);
+        container.on("touchcancel", ended);
+        container.on("resize", (e) => {
+            width = container.innerWidth();
+            height = container.innerHeight();
+        });
+
+        function moved(x, y) {
+            let horizontal = ((x / width) * 100 - 50) * 0.8;
+            let vertical = ((y / height) * 100 - 50) * 0.8;
+            card.css(
+                "transform",
+                `rotateY(${horizontal}deg) rotateX(${-vertical}deg)`
+            );
+        }
+
+        function ended() {
+            card.css("transition", "500ms");
+            card.css("transform", "rotateY(0deg) rotateX(0deg)");
+            setTimeout(() => card.css("transition", "none"), 500);
+        }
+    }
+}
+
+export function animateScrollAnimation() {
+    const container = $("#parallax-container");
+    const leftImage = container.find(".left img");
+    const rightImage = container.find(".right img");
+
+    gsap.set(leftImage, { xPercent: -50, yPercent: 50 });
+    gsap.set(rightImage, { xPercent: 50, yPercent: -50 });
+
+    gsap.to([leftImage, rightImage], {
+        xPercent: 0,
+        duration: 5,
+        ease: "circ",
+        scrollTrigger: {
+            id: "parallax-container",
+            trigger: "#parallax-container",
+            start: `0`,
+            end: "center center",
+            scrub: true,
+        },
+    });
 }
