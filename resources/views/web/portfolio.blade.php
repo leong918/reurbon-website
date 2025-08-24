@@ -2,14 +2,15 @@
 
 @section('content')
 <div id="portfolio">
-  <section class="section-banner">
-    <div class="overflow-hidden !max-w-none !h-[500px] !pr-[0] container banner-section bg-light-grey flex-row justify-between">
+  <section class="banner-section-container flex justify-center relative">
+    <div class="overflow-hidden container banner-section flex-row justify-between items-center">
       <div class="banner-title text-black my-auto ">
         Woaw
-        <span class="banner-red-title font-italic font-[ogo]">Portfolio</span>
+        <span class="banner-red-title font-italic font-[ogo] font-[300]">Portfolio</span>
       </div>
-      <div class="image-container my-auto">
-        <img src="\images\portfolio\portfolio-banner-deboss-font.png" class="banner-image" />
+      <div class="img-dummy xl:w-[100%] md:w-[80%] w-[40%]"></div>
+      <div class="image-container flex justify-end absolute right-0">
+        <img src="\images\portfolio\portfolio-banner-deboss-font.png" class="banner-image object-contain xl:w-[100%] md:w-[60%] w-[40%]" />
       </div>
     </div>
   </section>
@@ -73,7 +74,7 @@
         });
         @endphp
         <div id="portfolio-category-wrapper" class="@container work-item-category-nav lg:mb-20 mb-10 h-min">
-          <div class="title relative font-[ogo] section-subheader p-10 pl-20 pr-0 max-md:!text-[20px]">
+          <div class="title relative font-[ogo] section-subheader !font-[400] p-10 pl-20 pr-0 max-md:!text-[20px]">
             <span>
               Some <p>Recent Works</p>
             </span>

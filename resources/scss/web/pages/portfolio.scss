@@ -1,4 +1,10 @@
 #portfolio {
+    #portfolio-filter-container{
+        button{
+            font-family: var(--font-anybody);
+            font-weight: 300;
+        }
+    }
     @media (max-width: 768px) {
         #portfolio-container {
             flex-direction: row;
@@ -43,9 +49,6 @@
                 width: 60%;
             }
         }
-    }
-    .banner-image {
-        height: 200px;
     }
     .work-item-category-nav {
         display: flex;
@@ -157,9 +160,11 @@
                 transition: all 0.5s ease-in-out;
                 .card-header {
                     font-family: var(--font-cabinet-grotesk);
+                    font-weight: 700;
                 }
                 .card-subheader {
                     font-family: var(--font-anybody);
+                    font-weight: 300;
                 }
             }
         }
