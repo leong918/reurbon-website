@@ -1,0 +1,187 @@
+#about {
+    #banner {
+        .sub-title {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: self-start;
+
+            img {
+                width: 0px;
+                max-width: 80px;
+                height: 48px !important;
+                object-fit: cover;
+                object-position: left center;
+                align-self: center;
+            }
+        }
+    }
+
+    #aboutUs {
+        #parallax-container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            position: relative;
+            padding-block: 10%;
+            user-select: none;
+
+            .left {
+                flex: 0 0 40%;
+                position: relative;
+                // transform: translate(-180px, 50%);
+                img {
+                    width: 100%;
+                }
+            }
+
+            .center {
+                flex: 0 0 20%;
+                display: flex;
+                position: relative;
+                justify-content: center;
+                img {
+                    width: 15vw;
+                }
+            }
+
+            .right {
+                flex: 0 0 40%;
+                position: relative;
+                // transform: translate(0, -50%);
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .split-container {
+        margin-inline: auto;
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+    @media (max-width: 700px) {
+        .split-container {
+            flex-direction: column;
+        }
+        .left-content {
+            margin-bottom: 20px;
+        }
+    }
+    .left-content {
+        font-family: var(--font-anybody);
+        font-weight: 300;
+        flex: 0 1 50%;
+    }
+    .right-content {
+        font-weight: 400;
+        flex: 4 0 50%;
+    }
+
+    #ourServiceWrapper {
+        .category-title-container {
+            .category-arrow {
+                opacity: 60%;
+                transform: rotate(90deg);
+            }
+        }
+    }
+
+    #missionVision {
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .split-container {
+                margin-top: 20px;
+                > div {
+                    padding: 20px;
+                    display: flex;
+                    flex-direction: row;
+                }
+                .split-title {
+                    flex: 0 0 30%;
+                    text-align: center;
+                }
+                .split-content {
+                    flex: 0 0 70%;
+                }
+            }
+        }
+    }
+
+    #developmentPhrase {
+        .split-container {
+            border-top: 1px solid #a0a0a0;
+            padding-inline: 20px;
+            justify-content: space-between;
+        }
+        .read_box {
+            border: 1px solid #a0a0a0;
+            border-radius: 100px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            padding-inline: 13px;
+            user-select: none;
+            .section-content {
+                font-family: var(--font-cabinet-grotesk);
+                font-weight: 700 !important;
+            }
+            &:hover {
+                background: #1111111a;
+            }
+        }
+        .dropdown-child {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 0.75rem;
+            img {
+                height: 40px;
+                width: 40px;
+                object-fit: cover;
+                margin-bottom: 20px;
+            }
+        }
+        .category-arrow {
+            width: 15px;
+            opacity: 70%;
+            transform: rotate(-45deg);
+        }
+        .category-title {
+            font-family: var(--font-anybody);
+            font-weight: 300;
+        }
+    }
+
+    #ourAchievement {
+        .content {
+            .content-item {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background-color: #dfdfdf;
+                min-height: 160px;
+                padding: 20px;
+                border-radius: 10px;
+                .section-header {
+                    font-weight: 400;
+                }
+                .section-leading{
+                    font-weight: 300;
+                    font-family: var(--font-anybody);
+                }
+                @media (max-width: 340px) {
+                    h1 {
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
