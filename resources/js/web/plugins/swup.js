@@ -3,6 +3,7 @@ import SwupScriptsPlugin from "@swup/scripts-plugin";
 import { HideLoad, RevealLoad } from "../template/loader";
 import { initKineticSliderVoid } from "./rgbKineticSlider";
 import { initMagicCursor } from "./magicCursor";
+import { initialPageFunction } from "../page";
 import gsap from "gsap";
 let kineticSlider = null;
 const loadPixiFilters = () => {
@@ -81,7 +82,11 @@ swup.hooks.replace("animation:in:await", async () => {
 });
 
 // 2. Swup 将新内容替换到 DOM 之后
-swup.hooks.on("content:replace", () => {});
+swup.hooks.on("content:replace", () => {
+    // Initialize page functions immediately after content replacement
+    // This ensures event handlers are set up before user interactions
+    initialPageFunction();
+});
 
 // 3. 切换完成（浏览器历史、滚动位置都已就绪）
 swup.hooks.on("visit:end", () => {

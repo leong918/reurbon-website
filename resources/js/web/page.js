@@ -19,7 +19,7 @@ function scrollFollowPortfolio() {
 export function initialPageFunction() {
     scrollFollowPortfolio();
     //portfolio grid item
-    $("#portfolio-filter-container .item").on("click", function () {
+    $("#portfolio-filter-container .item").off("click").on("click", function () {
         $("#portfolio-filter-container .item").removeClass("active");
         $(this).addClass("active");
         const category_filter = $(this).data("category");
