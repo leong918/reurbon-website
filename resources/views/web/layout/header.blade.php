@@ -1,5 +1,5 @@
 <header id="tt-header" class="tt-header-fixed">
-    @include('web.component.header')
+    {{-- @include('web.component.header') --}}
 
     <nav class="tt-overlay-menu tt-ol-menu-count">
         <div class="tt-ol-menu-ghost">Explore</div>
