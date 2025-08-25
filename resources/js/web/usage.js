@@ -3,6 +3,10 @@ import { HideLoad } from "./template/loader";
 import imagesLoaded from "imagesloaded";
 import { initKineticSliderVoid } from "./plugins/rgbKineticSlider";
 import { initMagicCursor } from "./plugins/magicCursor";
+
+// Import the safe initialization function from swup
+import "./plugins/swup";
+
 const content = document.querySelector("body");
 const imgLoad = imagesLoaded(content);
 
@@ -12,6 +16,12 @@ $(function () {
     imgLoad.on("done", (instance) => {
         HideLoad();
         initKineticSliderVoid();
-        initMagicCursor();
+        
+        // Initialize magic cursor safely
+        try {
+            initMagicCursor();
+        } catch (error) {
+            console.error('Error initializing magic cursor on initial load:', error);
+        }
     });
 });

@@ -1,8 +1,16 @@
 import $ from "jquery";
 import gsap from "gsap";
+
 export const initMagicCursor = () => {
     if ($("body").not(".is-mobile").hasClass("tt-magic-cursor")) {
         if ($(window).width() > 1024) {
+            // Clean up any existing magnetic wraps first
+            $(".magnetic-item").each(function() {
+                if ($(this).parent().hasClass("magnetic-wrap")) {
+                    $(this).unwrap();
+                }
+            });
+            
             $(".magnetic-item").wrap('<div class="magnetic-wrap"></div>');
 
             if ($("a.magnetic-item").length) {
@@ -30,23 +38,23 @@ export const initMagicCursor = () => {
                 opacity: $ballOpacity,
             });
 
-            document.addEventListener("mousemove", mouseMove);
-
-            function mouseMove(e) {
+            // Store event handlers globally for cleanup
+            window.mouseMoveHandler = function(e) {
                 $mouse.x = e.clientX;
                 $mouse.y = e.clientY;
-            }
+            };
 
-            gsap.ticker.add(updatePosition);
-
-            function updatePosition() {
+            window.updatePositionTicker = function() {
                 if (!$active) {
                     $pos.x += ($mouse.x - $pos.x) * $ratio;
                     $pos.y += ($mouse.y - $pos.y) * $ratio;
 
                     gsap.set($ball, { x: $pos.x, y: $pos.y });
                 }
-            }
+            };
+
+            document.addEventListener("mousemove", window.mouseMoveHandler);
+            gsap.ticker.add(window.updatePositionTicker);
 
             $(".magnetic-wrap").mousemove(function (e) {
                 parallaxCursor(e, this, 2); // magnetic ball = low number is more attractive
@@ -435,18 +443,24 @@ export const initMagicCursor = () => {
                 });
 
             // Show/hide on document leave/enter.
+            window.mouseLeaveHandler = function() {
+                gsap.to("#magic-cursor", { duration: 0.3, autoAlpha: 0 });
+            };
+            
+            window.mouseEnterHandler = function() {
+                gsap.to("#magic-cursor", { duration: 0.3, autoAlpha: 1 });
+            };
+            
+            window.mouseMoveShowHandler = function() {
+                gsap.to("#magic-cursor", { duration: 0.3, autoAlpha: 1 });
+            };
+            
             $(document)
-                .on("mouseleave", function () {
-                    gsap.to("#magic-cursor", { duration: 0.3, autoAlpha: 0 });
-                })
-                .on("mouseenter", function () {
-                    gsap.to("#magic-cursor", { duration: 0.3, autoAlpha: 1 });
-                });
+                .on("mouseleave", window.mouseLeaveHandler)
+                .on("mouseenter", window.mouseEnterHandler);
 
             // Show as the mouse moves.
-            $(document).mousemove(function () {
-                gsap.to("#magic-cursor", { duration: 0.3, autoAlpha: 1 });
-            });
+            $(document).on("mousemove", window.mouseMoveShowHandler);
         }
     }
 };
