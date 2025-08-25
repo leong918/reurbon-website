@@ -9,6 +9,8 @@ import { initFloatingHeader } from "./header";
 import { swiperClientFeedback, swiperClients } from "../shared/swiper";
 import { initGlobo } from "../shared/globo";
 import { initialPageFunction } from "../page";
+import { initSimulation } from "../shared/2dBoxSimulation"
+import {initGsapGrowWidth} from "../shared/gsapGrow"
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -449,11 +451,13 @@ export function HideLoad() {
             1
         );
     }
-
+    //put first to hide the dropdown before calculate scroll trigger
+    initialPageFunction();
     initTemplate();
     initFloatingHeader();
     swiperClients();
     swiperClientFeedback();
     initGlobo();
-    initialPageFunction();
+    initSimulation();
+    initGsapGrowWidth()
 }

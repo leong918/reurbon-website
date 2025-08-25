@@ -1,9 +1,13 @@
+.banner-section-container{
+    @apply bg-[#ebebeb] h-[500px];
+}
+
 .banner-section {
-    @apply  pt-[86px] xs:pt-[108px] xl:pt-[148px] pb-6 xs:pb-13 flex z-10 h-full;
+    @apply  pt-[86px] xs:pt-[108px] xl:pt-[148px] pb-6 xs:pb-13 flex z-10 mx-auto h-full ;
 }
 
 .section-container {
-    @apply bg-[#ebebeb] text-black py-[20px] xl:py-[120px];
+    @apply bg-[#ebebeb] text-black py-[40px] xl:py-[60px] ;
 }
 
 .flex-item-list-container {
